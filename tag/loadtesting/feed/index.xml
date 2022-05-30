@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>loadtesting &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/loadtesting/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 08 Jan 2018 15:44:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>loadtesting &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Measuring the performance impact of Meltdown/Spectre with Prometheus</title>
+		<link>/measuring-the-performance-impact-of-meltdownspectre-with-promtheus</link>
+		
+		<dc:creator><![CDATA[Conor Broderick]]></dc:creator>
+		<pubDate>Mon, 08 Jan 2018 09:50:15 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[loadtesting]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3613</guid>
+
+					<description><![CDATA[The world of infosec is alarmed right now over the recent security vulnerabilities disclosed by Google on Wednesday that affect Intel, AMD, and ARM chips. The now infamous Meltdown and Spectre bugs allow for the reading of sensitive information from a system's memory, including passwords, private keys and other sensitive information. Thankfully fixes are being swiftly [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Blackbox Exporter Benchmarking</title>
+		<link>/blackbox-exporter-benchmarking</link>
+		
+		<dc:creator><![CDATA[Conor Broderick]]></dc:creator>
+		<pubDate>Mon, 19 Jun 2017 10:51:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[blackbox_exporter]]></category>
+		<category><![CDATA[loadtesting]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2944</guid>
+
+					<description><![CDATA[Have you ever wondered how many CPU seconds it takes to probe an instance via TCP or HTTP 100, 1,000, or 10,000 times? In this blogpost we'll be taking a look at how many CPU seconds in total are used across four cores when probing an external service using the blackbox exporter. In case you [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How much RAM does my Prometheus need for ingestion?</title>
+		<link>/how-much-ram-does-my-prometheus-need-for-ingestion</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 09 Jan 2017 10:36:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[loadtesting]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tuning]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2475</guid>
+
+					<description><![CDATA[It can be a little confusing to figure out Prometheus memory usage. Let's break part of it down. I've been doing loadtests to better understand how Prometheus behaves in both big and small deployments. From this I've been able to distil some simple rules to help guide you in sizing your Prometheus for ingestion. Due to [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

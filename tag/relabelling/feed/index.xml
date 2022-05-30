@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>relabelling &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/relabelling/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 21 Dec 2020 10:29:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>relabelling &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Policy is for configuration, not metric names</title>
+		<link>/policy-is-for-configuration-not-metric-names</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Dec 2020 10:29:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[federation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[remote write]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5845</guid>
+
+					<description><![CDATA[Metric names are part of a time series's identity, so shouldn't include information unrelated to identity. I previously looked at some of the consideration for choosing target labels. Similar applies to the names of metrics, you want something descriptive but not longer than it needs to be. In this context, I'd like to talk about [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Or in relabelling</title>
+		<link>/or-in-relabelling</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 04 May 2020 08:40:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5350</guid>
+
+					<description><![CDATA[How do you allow for the keep relabel action halting relabelling for things not kept? Any targets dropped by the drop relabel action won't be processed by any following relabel actions. The same applies for keep, if it's not kept then it's now gone. In practice this means that a list of actions like - source_labels: [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Testing SSH of hosts from Consul</title>
+		<link>/testing-ssh-of-hosts-from-consul</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 10 Feb 2020 07:00:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[blackbox_exporter]]></category>
+		<category><![CDATA[consul]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5111</guid>
+
+					<description><![CDATA[We've previously looked at scraping services from consul and ssh checks. How can we combine those? The use of relabelling for the blackbox exporter isn't tied to static_configs, you can use it with any service discovery mechanism. I'll presume you already have a working Consul setup. To demonstrate first we run the blackbox exporter: wget [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ICMP Pings with the Blackbox exporter</title>
+		<link>/icmp-pings-with-the-blackbox-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 09 Jul 2018 08:25:37 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[blackbox_exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3897</guid>
+
+					<description><![CDATA[The Blackbox exporter can perform ICMP probes. Let's see how. First download and run the blackbox_exporter: wget https://github.com/prometheus/blackbox_exporter/releases/download/v0.12.0/blackbox_exporter-0.12.0.linux-amd64.tar.gz tar -xzf blackbox_exporter-*.linux-amd64.tar.gz cd blackbox_exporter-* sudo ./blackbox_exporter sudo is used here as ICMP typically requires raw socket access, and running as root is one way to provide the necessary privileges. If you visit :9115/probe?module=icmp&#38;target= the probe will be performed, [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Why are Prometheus histograms cumulative?</title>
+		<link>/why-are-prometheus-histograms-cumulative</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 11 Dec 2017 09:21:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3541</guid>
+
+					<description><![CDATA[Have you ever wondered why the buckets in histograms are not just counters of events that fall into each bucket? Let us say that you have a histogram with the default buckets recording latency, and had observed events of size 0.04s, 0.2s, 0.3s, 1s and 5s. The text format output would look like: # HELP [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Relabelling can discard targets, timeseries and alerts</title>
+		<link>/relabelling-can-discard-targets-timeseries-and-alerts</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Aug 2017 07:39:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3021</guid>
+
+					<description><![CDATA[When relabelling is suggested for selecting targets with service discovery there's sometimes a misunderstanding that relabelling can only change labels. That's not the case. The default action for relabelling is indeed replace, and it is the most commonly used action. There are other actions on offer though. &#160; The drop and keep actions will halt processing [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>High Availability Prometheus Alerting and Notification</title>
+		<link>/high-availability-prometheus-alerting-and-notification</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 17 Jul 2017 08:55:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alertmanager]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3014</guid>
+
+					<description><![CDATA[Prometheus is architected for reliability of alerting, how do you set it up? For a setup that can gracefully handle any machine failing, we'll need to run two Prometheus servers and two Alertmanagers. First we'll run the Alertmanagers on different machines, and setup a mesh between them: # On a machine named "am-1": wget https://github.com/prometheus/alertmanager/releases/download/v0.15.3/alertmanager-0.15.3.linux-amd64.tar.gz tar [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Extracting labels from legacy metric names</title>
+		<link>/extracting-labels-from-legacy-metric-names</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 05 Jun 2017 10:00:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2904</guid>
+
+					<description><![CDATA[When metrics come from another system they often don't have labels. metric_relabel_configs offers one way around that. &#160; Let's say that you were using a legacy system that produces metrics for JVM memory that looked like: memory_pools_PS_Eden_Space_committed memory_pools_PS_Eden_Space_max memory_pools_PS_Eden_Space_used memory_pools_PS_Old_Gen_committed memory_pools_PS_Old_Gen_max memory_pools_PS_Old_Gen_used memory_pools_PS_Survivor_Space_committed memory_pools_PS_Survivor_Space_max memory_pools_PS_Survivor_Space_used It looks like PS_Eden_Space, PS_Old_Gen and PS_Survivor_Space would make sense as labels, and a unit [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>What&#8217;s in a __name__?</title>
+		<link>/whats-in-a-__name__</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 29 May 2017 08:22:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2877</guid>
+
+					<description><![CDATA[You may have noticed that most PromQL functions and operators remove the metric name in their result. Let's look at why. &#160; Let's take a well known metric, process_cpu_seconds_total, which is the amount of CPU time in seconds that a process has used since startup. If I multiply that by 0 or take a rate(), the resultant [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>relabel_configs vs metric_relabel_configs</title>
+		<link>/relabel_configs-vs-metric_relabel_configs</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 03 Apr 2017 07:37:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2437</guid>
+
+					<description><![CDATA[We've looked at the full Life of a Label. Let's focus on one of the most common confusions around relabelling. &#160; It's not uncommon for a user to share a Prometheus config with a valid relabel_configs and wonder why it isn't taking effect. This is often resolved by using metric_relabel_configs instead (the reverse has also happened, [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

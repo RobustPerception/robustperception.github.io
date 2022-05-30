@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>capacity &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/capacity/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 05 Oct 2020 09:32:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>capacity &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How long can Prometheus retention be?</title>
+		<link>/how-long-can-prometheus-retention-be</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 05 Oct 2020 09:32:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[capacity]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[provisioning]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5669</guid>
+
+					<description><![CDATA[Data is smaller and disks are bigger than you'd think. When planning a Prometheus deployment you might have gotten the impression that Prometheus isn't designed for more than 2 weeks of storage, so if you want more you have to use a clustered storage system such as Thanos, Cortex, or M3DB. This is however a [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Why does Prometheus use so much RAM?</title>
+		<link>/why-does-prometheus-use-so-much-ram</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 07 Sep 2020 08:38:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[capacity]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5621</guid>
+
+					<description><![CDATA[Users are sometimes surprised that Prometheus uses RAM, let's look at that. More than once a user has expressed astonishment that their Prometheus is using more than a few hundred megabytes of RAM. A few hundred megabytes isn't a lot these days. Sure a small stateless service like say the node exporter shouldn't use much [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Avoid outages: Beware the Knee</title>
+		<link>/avoid-outages-beware-the-knee</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 02 Nov 2015 11:57:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[capacity]]></category>
+		<category><![CDATA[provisioning]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1062</guid>
+
+					<description><![CDATA[Your service's traffic is steadily growing, latency has increased a bit but it's within reason. One day you launch a new customer and the latency jumps through the roof causing an outage. What happened? You hit the knee. When shopping in a supermarket we're used to seeing queues suddenly appear, where just a few minutes [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Do you know your peak-to-mean ratio?</title>
+		<link>/do-you-know-your-peak-to-mean-ratio</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2015 13:51:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[capacity]]></category>
+		<category><![CDATA[estimation]]></category>
+		<category><![CDATA[provisioning]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=824</guid>
+
+					<description><![CDATA[Traffic from users to your servers isn't a steady stream, it waxes and wanes over the day and week. The peak-to-mean ratio is your primary tool to avoid outages or unnecessary costs due to this. Users aren't constantly glued to their screens, they have to go to work, go home and go to sleep. Users for most applications [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>The Three Types of Cache</title>
+		<link>/the-three-types-of-cache</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 12 Aug 2015 10:54:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[availability]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[capacity]]></category>
+		<category><![CDATA[latency]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=670</guid>
+
+					<description><![CDATA[Caches are a common feature of distributed systems, often added to improve performance. There are three main types of cache, and knowing about them will help you design robust systems. A cache is a subset of your data that remembers values you're previously fetched or calculated from somewhere further away or more expensive. The next time [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

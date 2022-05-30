@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>change management &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/change-management/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Sun, 22 Nov 2015 00:09:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>change management &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Do you have basic infrastructure?</title>
+		<link>/do-you-have-basic-infrastructure</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 18 Nov 2015 10:13:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[change management]]></category>
+		<category><![CDATA[configuration management]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1134</guid>
+
+					<description><![CDATA[When starting out it's easy to think that you need Docker, Kubernetes, Microservices, Continuous Deployment and all the other trending topics on Hacker News/Reddit/Lobsters. What do you really need? It's easy to get overwhelmed by all the great posts and presentations by companies sharing how they run their infrastructure, and how they've evolved it to [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

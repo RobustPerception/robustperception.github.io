@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>node exporter &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/node-exporter/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Wed, 09 Dec 2020 17:13:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>node exporter &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>ARP cache metrics from the node exporter</title>
+		<link>/arp-cache-metrics-from-the-node-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 16 Nov 2020 11:01:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5789</guid>
+
+					<description><![CDATA[The node exporter has metrics about the ARP table. The ARP cache is part of how computers figure out which IPv4 addresses match up with which MAC or hardware addresses, so that packets can be efficiently switched on local network segments. The contents of this cache can be seen in /proc/net/arp, or in a more [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>CPU scheduling metrics from the node exporter</title>
+		<link>/cpu-scheduling-metrics-from-the-node-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 31 Aug 2020 09:19:20 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5604</guid>
+
+					<description><![CDATA[Linux provides scheduling metrics in /proc/schedstat, which the node exporter uses. The node exporter current exposes three of these: # HELP node_schedstat_running_seconds_total Number of seconds CPU spent running a process. # TYPE node_schedstat_running_seconds_total counter node_schedstat_running_seconds_total{cpu="0"} 1.093032217430793e+06 node_schedstat_running_seconds_total{cpu="1"} 1.07527722232456e+06 # HELP node_schedstat_timeslices_total Number of timeslices executed by CPU. # TYPE node_schedstat_timeslices_total counter node_schedstat_timeslices_total{cpu="0"} 5.965185464e+09 node_schedstat_timeslices_total{cpu="1"} 5.266658269e+09 [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>CPU frequency scaling metrics from the node exporter</title>
+		<link>/cpu-frequency-scaling-metrics-from-the-node-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 17 Aug 2020 09:50:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5558</guid>
+
+					<description><![CDATA[Modern CPUs don't run at one constant frequency. To save power CPUs can reduce the frequency they run at, which is quite useful for battery based devices like laptops. So while CPU metrics give you the proportion of time in each mode, one second of user time isn't always represent same amount of work as [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using the group() aggregator in PromQL</title>
+		<link>/using-the-group-aggregator-in-promql</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 10 Aug 2020 09:49:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5545</guid>
+
+					<description><![CDATA[Prometheus 2.20 added a group aggregator. What is it for? If you wanted to count the number of unique values a label has, such as say the number of values the cpu label had in node_cpu_seconds_total per instance the standard pattern is: count without(cpu) ( count without(mode) (node_cpu_seconds_total) ) That is first you aggregate away any [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Linux software RAID metrics from the node exporter</title>
+		<link>/linux-software-raid-metrics-from-the-node-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 03 Aug 2020 10:23:27 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5492</guid>
+
+					<description><![CDATA[/proc/mdstat is another of the files that the node exporter exposes as metrics. The Linux software RAID metrics are one of the more intricate metrics in terms of parsing due to /proc/mdstat being more suited to humans than machines, which you can get a sense of from the unittest fixture. For one of my home [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Time metric from the node exporter</title>
+		<link>/time-metric-from-the-node-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 13 Jul 2020 09:40:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5483</guid>
+
+					<description><![CDATA[The node exporter exposes the current machine time. The time module is even simpler than conntrack, exposing only a single metric: # HELP node_time_seconds System time in seconds since epoch (1970). # TYPE node_time_seconds gauge node_time_seconds 1.5935998188567045e+09 On its own this may not seem of much use, as Prometheus already has the time() function to [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using Letsencrypt with the node exporter</title>
+		<link>/using-letsencrypt-with-the-node-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 29 Jun 2020 10:13:30 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5472</guid>
+
+					<description><![CDATA[As of 1.0, the node exporter has experimental support for TLS. This can be hooked up to Letsencrypt. The TLS feature of the node exporter doesn't have any in-built support for Letsencrypt or any other way to renew certificates itself. Instead what it does is that if the certificate files change on disk then it [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Conntrack metrics from the node exporter</title>
+		<link>/conntrack-metrics-from-the-node-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 25 May 2020 09:44:05 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5387</guid>
+
+					<description><![CDATA[The node exporter includes metrics about the Linux connection tracking tables. As metrics go, the conntrack ones don't seem very exciting. Many machines won't even have the nf_conntrack module loaded into the kernel. There's just two metrics: # HELP node_nf_conntrack_entries Number of currently allocated flow entries for connection tracking. # TYPE node_nf_conntrack_entries gauge node_nf_conntrack_entries 205 [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Atomic Writes and the Textfile Collector</title>
+		<link>/atomic-writes-and-the-textfile-collector</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 18 May 2020 06:54:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5370</guid>
+
+					<description><![CDATA[To avoid weirdness, write your files atomically. Previous posts involving the node exporter's textfile collector have not written directly to the .prom file, rather writing first to a temporary file and then renaming it. This may seem like an unnecessary complication as things may seem fine without it, however it's actually an important detail for [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Kernel file descriptor metrics from the node exporter</title>
+		<link>/kernel-file-descriptor-metrics-from-the-node-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 06 Apr 2020 08:13:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5235</guid>
+
+					<description><![CDATA[The node exporter provides kernel file descriptor metrics. The kernel file descriptor metrics are pretty simple, there's only two of them which come from file-nr and file-max: # HELP node_filefd_allocated File descriptor statistics: allocated. # TYPE node_filefd_allocated gauge node_filefd_allocated 17843 # HELP node_filefd_maximum File descriptor statistics: maximum. # TYPE node_filefd_maximum gauge node_filefd_maximum 3.273286e+06 They mean [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

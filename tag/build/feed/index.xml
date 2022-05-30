@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>build &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/build/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Sat, 28 Nov 2015 13:15:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>build &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Do you know what software you&#8217;re running?</title>
+		<link>/do-you-know-what-software-youre-running</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Sat, 28 Nov 2015 13:15:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[build]]></category>
+		<category><![CDATA[configuration management]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1256</guid>
+
+					<description><![CDATA[When getting something working for the first time, it's easy to get caught up in Docker or Vargant. Before you run it in production with full access and user data, do you know what code you're running? Technologies like Docker, Vagrant, Maven, Pip, Apt and many others make it easy to try out new technologies [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pushgateway &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/pushgateway/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 07 Dec 2020 11:15:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>pushgateway &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Choosing your pushgateway grouping key</title>
+		<link>/choosing-your-pushgateway-grouping-key</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 07 Dec 2020 11:15:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[pushgateway]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5802</guid>
+
+					<description><![CDATA[What does and doesn't make a good grouping key? Pushgateway grouping keys are fundamentally target labels, and similar considerations apply. They should be minimal and they should be constant. What the latter means may be a little non-obvious for batch jobs though. The purpose of the Pushgateway is to hold metrics from the end of [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Aggregating across batch job runs with push_time_seconds</title>
+		<link>/aggregating-across-batch-job-runs-with-push_time_seconds</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 06 Aug 2018 09:17:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[pushgateway]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3907</guid>
+
+					<description><![CDATA[For counting how many times a thing has happened you can use a counter and rate(), but that doesn't work across batch jobs. &#160; The Pushgateway is designed to take in metrics from a service-level batch job just before it exits, and serve those up to Prometheus until the next run of the batch job completes. [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Common pitfalls when using the Pushgateway</title>
+		<link>/common-pitfalls-when-using-the-pushgateway</link>
+		
+		<dc:creator><![CDATA[Conor Broderick]]></dc:creator>
+		<pubDate>Mon, 19 Feb 2018 07:49:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[pushgateway]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3717</guid>
+
+					<description><![CDATA[Jobs of an ephemeral nature are often not around long enough to have their metrics scraped by Prometheus. In order to remedy this the Pushgateway was developed to allow for these types of jobs to push their metrics to a metrics cache in order to be scraped by Prometheus long after the original jobs have [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Monitoring Batch Jobs in Python</title>
+		<link>/monitoring-batch-jobs-in-python</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Fri, 09 Oct 2015 15:23:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[pushgateway]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=736</guid>
+
+					<description><![CDATA[Prometheus monitoring is usually against on long-lived daemons, but what if you've a batch job that you want to monitor? When monitoring batch jobs, such as cronjobs, the main thing you care about is when it last succeeded. For example if you've a cronjob that runs every hour and needs to work at least once every [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>prometheus &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/prometheus/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Tue, 29 Dec 2020 12:15:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>prometheus &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Monitoring is a means, not an end</title>
+		<link>/monitoring-is-a-means-not-an-end</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 28 Dec 2020 09:15:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5873</guid>
+
+					<description><![CDATA[Does it really have to be perfect? While there is a certain intellectual satisfaction to be had by getting a system just right, the purpose of monitoring is to help you run whatever it is that you're monitoring. That could be a website used directly by your customers, a backend only used internally, or even [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Policy is for configuration, not metric names</title>
+		<link>/policy-is-for-configuration-not-metric-names</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Dec 2020 10:29:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[federation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[remote write]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5845</guid>
+
+					<description><![CDATA[Metric names are part of a time series's identity, so shouldn't include information unrelated to identity. I previously looked at some of the consideration for choosing target labels. Similar applies to the names of metrics, you want something descriptive but not longer than it needs to be. In this context, I'd like to talk about [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Prefer without and ignoring</title>
+		<link>/prefer-without-and-ignoring</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2020 09:40:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5860</guid>
+
+					<description><![CDATA[Which of by/without and on/ignoring should you use? When writing a given bit of PromQL you know what labels you want in the output of an aggregation, so why not put them in the by ? Similarly when doing vector matching and using on. So why ever use without and ignoring? Application architectures and deployment [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Choosing your pushgateway grouping key</title>
+		<link>/choosing-your-pushgateway-grouping-key</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 07 Dec 2020 11:15:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[pushgateway]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5802</guid>
+
+					<description><![CDATA[What does and doesn't make a good grouping key? Pushgateway grouping keys are fundamentally target labels, and similar considerations apply. They should be minimal and they should be constant. What the latter means may be a little non-obvious for batch jobs though. The purpose of the Pushgateway is to hold metrics from the end of [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 2.23.0</title>
+		<link>/new-features-in-prometheus-2-23-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 30 Nov 2020 10:25:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5833</guid>
+
+					<description><![CDATA[Prometheus 2.23.0 is now out, following on from 2.22.0 with many fixes and improvements. There's been a variety of performance improvements to the TSDB. Compaction will now be faster, there will only be one checkpoint made after Prometheus restarts after not running for a good while, and the series API no longer loads any chunks. Remote write can now [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>OpenMetrics is released</title>
+		<link>/openmetrics-is-released</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2020 12:12:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[openmetrics]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5813</guid>
+
+					<description><![CDATA[Coming soon to a standards body near you. OpenMetrics has been regularly worked on since June 2017. The goal is to take the Prometheus exposition text format which is a defacto standard, and make it into a cleaner vendor-neutral standard. As of earlier this month, the standard is now available! The next steps are to bring [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ARP cache metrics from the node exporter</title>
+		<link>/arp-cache-metrics-from-the-node-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 16 Nov 2020 11:01:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5789</guid>
+
+					<description><![CDATA[The node exporter has metrics about the ARP table. The ARP cache is part of how computers figure out which IPv4 addresses match up with which MAC or hardware addresses, so that packets can be efficiently switched on local network segments. The contents of this cache can be seen in /proc/net/arp, or in a more [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Why is my SNMP string showing as hexadecimal?</title>
+		<link>/why-is-my-snmp-string-showing-as-hexadecimal</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 09 Nov 2020 10:28:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[snmp]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5762</guid>
+
+					<description><![CDATA[Why is my name showing as 0x6d79206e616d65? Strings in Prometheus are full UTF-8, however not all byte sequences are valid UTF-8. For example the byte 0xff cannot appear in a valid UTF-8 string. What does this have to do with SNMP? If we get arbitrary bytes that could in principle be anything, then we have [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Checking for specific HTTP status codes with the blackbox exporter</title>
+		<link>/checking-for-specific-http-status-codes-with-the-blackbox-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 02 Nov 2020 09:51:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alerting]]></category>
+		<category><![CDATA[blackbox_exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5754</guid>
+
+					<description><![CDATA[How would you check that a HTTP endpoint is returning a 204? We've previously looked at using the blackbox exporter to check that a 2xx response code is being returned, you might however consider only particular 2xx codes as okay. Your first thought might be to use an alert based on the probe_http_status_code metric, however [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Show multiple expressions for an instance in a Grafana table</title>
+		<link>/show-multiple-expressions-for-an-instance-in-a-grafana-table</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 26 Oct 2020 08:49:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grafana]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5740</guid>
+
+					<description><![CDATA[Have you ever wanted to have a table showing multiple metrics across all of your instances? I'm going to show you how to show CPU usage and RSS for all of your instances, here I'm using Grafana 7.1.1 and the end result will look something like: &#160; First create a Table panel, and define your [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

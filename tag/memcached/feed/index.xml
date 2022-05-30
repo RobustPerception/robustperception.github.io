@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>memcached &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/memcached/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 10 Jun 2019 08:30:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>memcached &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Monitoring memcached with Prometheus</title>
+		<link>/monitoring-memcached-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 10 Jun 2019 08:30:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[memcached]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4462</guid>
+
+					<description><![CDATA[As with many applications, there's an exporter for memcached. To demonstrate, let's get a memcached up and running using Docker so you don't have to compile it by hand: docker run -p11211:11211 -d memcached:1.5.16 You can see the stats it provides with: echo stats &#124; nc localhost 11211 To get this into a format usable [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

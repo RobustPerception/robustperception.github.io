@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>configuration management &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/configuration-management/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 14 Oct 2019 07:31:29 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>configuration management &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Environment substitution with Docker</title>
+		<link>/environment-substitution-with-docker</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 14 Oct 2019 07:31:29 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[configuration management]]></category>
+		<category><![CDATA[docker]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4658</guid>
+
+					<description><![CDATA[Prometheus leaves configuration and runtime management to their respective roles. How might you integrate those? Some process management systems like Kubernetes and EC2 only provide certain information at runtime, often via environment variable, files in known locations, or well known URLs. Rather than trying to support everything and gradually become a configuration management system, Prometheus [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>You look good, have you lost machines?</title>
+		<link>/you-look-good-have-you-lost-machines</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Dec 2015 17:43:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[configuration management]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1413</guid>
+
+					<description><![CDATA[Whether you're on bare metal or using a cloud provider, there's a question you should always be able to answer. What machines do I have, and what is meant to be running on them? Production infrastructure is not static. Services get created and obsoleted. Machines get brought up and turned-down. As organizations grow and systems get ever [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Do you know what software you&#8217;re running?</title>
+		<link>/do-you-know-what-software-youre-running</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Sat, 28 Nov 2015 13:15:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[build]]></category>
+		<category><![CDATA[configuration management]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1256</guid>
+
+					<description><![CDATA[When getting something working for the first time, it's easy to get caught up in Docker or Vargant. Before you run it in production with full access and user data, do you know what code you're running? Technologies like Docker, Vagrant, Maven, Pip, Apt and many others make it easy to try out new technologies [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Do you have basic infrastructure?</title>
+		<link>/do-you-have-basic-infrastructure</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 18 Nov 2015 10:13:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[change management]]></category>
+		<category><![CDATA[configuration management]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1134</guid>
+
+					<description><![CDATA[When starting out it's easy to think that you need Docker, Kubernetes, Microservices, Continuous Deployment and all the other trending topics on Hacker News/Reddit/Lobsters. What do you really need? It's easy to get overwhelmed by all the great posts and presentations by companies sharing how they run their infrastructure, and how they've evolved it to [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

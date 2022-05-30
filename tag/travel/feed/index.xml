@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>travel &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/travel/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Thu, 20 Apr 2017 11:23:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>travel &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Optimising a US business trip</title>
+		<link>/optimising-a-us-business-trip</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Sat, 07 May 2016 16:23:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[travel]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1752</guid>
+
+					<description><![CDATA[I had a business need to go to San Francisco for a day. I decided to try and get the best I could out of it, and given Niamh Bushnell's recent article I thought I'd share my approach and experiences. As those who are used to the typical technical content of this blog are aware, I run a bootstrapped [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

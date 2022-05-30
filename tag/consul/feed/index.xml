@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>consul &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/consul/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 10 Feb 2020 07:00:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>consul &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Testing SSH of hosts from Consul</title>
+		<link>/testing-ssh-of-hosts-from-consul</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 10 Feb 2020 07:00:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[blackbox_exporter]]></category>
+		<category><![CDATA[consul]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5111</guid>
+
+					<description><![CDATA[We've previously looked at scraping services from consul and ssh checks. How can we combine those? The use of relabelling for the blackbox exporter isn't tied to static_configs, you can use it with any service discovery mechanism. I'll presume you already have a working Consul setup. To demonstrate first we run the blackbox exporter: wget [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Extracting full labels from Consul tags</title>
+		<link>/extracting-full-labels-from-consul-tags</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 20 Mar 2017 08:40:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[consul]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2646</guid>
+
+					<description><![CDATA[Prometheus 1.3.0 contained a small change that makes it possible to extract arbitrary labels from systems like Consul that only normally support one-dimensional tags. Consul supports tags as a array of strings, compared to the key/value pairs that Prometheus labels allow. This usually results in tags such as "dev" and "prod", which require configuration on the Prometheus side [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Finding Consul services to monitor with Prometheus</title>
+		<link>/finding-consul-services-to-monitor-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 06 Jul 2016 17:17:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[consul]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1969</guid>
+
+					<description><![CDATA[One of the service discovery methods Prometheus supports is Consul. Let's look at how to use it. Finding targets happens in two stages. First a service discovery method such as Consul returns potential targets with metadata. Secondly relabelling allows you to choose which of those targets you want to scrape, and how to convert the [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Little Things Matter</title>
+		<link>/little-things-matter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 20 Jan 2016 19:20:59 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[consul]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1492</guid>
+
+					<description><![CDATA[As part of designing and building Prometheus, hundreds of technical decisions have to be made. Every one of them is important in building a sustainable consistent ecosystem. Today, let's look at one small decision that was made by the Prometheus developers in Consul service discovery. Consul has the idea of tags, a list of strings [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Healthchecking is Not Transitive</title>
+		<link>/healthchecking-is-not-transitive</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 28 Sep 2015 11:23:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[consul]]></category>
+		<category><![CDATA[healthchecking]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[rpc]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=854</guid>
+
+					<description><![CDATA[Systems such as Consul perform healthchecking of local services and expose this information to other machines within the cluster. Does this mean that the service will work when you try to talk to it? With systems such as Consul it can be tempting to think that your job is done reliability-wise due to its in-built health checking [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

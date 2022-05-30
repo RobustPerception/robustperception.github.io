@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>json &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/json/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 22 Feb 2021 18:58:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>json &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Using JSON file service discovery with Prometheus</title>
+		<link>/using-json-file-service-discovery-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Fri, 19 Feb 2016 19:36:23 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1553</guid>
+
+					<description><![CDATA[Prometheus offers a number of ways to find the targets to scrape, DNS, EC2, Consul, Kubernetes, Zookeeper and Marathon. But what if what you aren't using one of those? It's not possible for Prometheus to support every possible environment, and attempting to do so out of the box would make things rather unwieldy. Instead in [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Writing JSON Exporters in Python</title>
+		<link>/writing-json-exporters-in-python</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 19 Aug 2015 14:51:15 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[exporters]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=738</guid>
+
+					<description><![CDATA[A common question is is there a way to ingest JSON metrics from a random system into Prometheus? It's not possible to extract useful metrics from an arbitrary JSON blob, so that's not something the can be offered out of the box. However it's easy to write an exporter in Python to produce meaningful metrics. [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

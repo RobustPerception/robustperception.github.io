@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>openmetrics &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/openmetrics/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Wed, 25 Nov 2020 12:12:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>openmetrics &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>OpenMetrics is released</title>
+		<link>/openmetrics-is-released</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2020 12:12:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[openmetrics]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5813</guid>
+
+					<description><![CDATA[Coming soon to a standards body near you. OpenMetrics has been regularly worked on since June 2017. The goal is to take the Prometheus exposition text format which is a defacto standard, and make it into a cleaner vendor-neutral standard. As of earlier this month, the standard is now available! The next steps are to bring [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Checking OpenMetrics output is valid</title>
+		<link>/checking-openmetrics-output-is-valid</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 10 Dec 2018 08:54:25 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[openmetrics]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4146</guid>
+
+					<description><![CDATA[The Python client can be used to check if a given metrics output is valid OpenMetrics format. The OpenMetrics format is near completion with the last few details still being determined, but if you're working on an implementation you can check if what you have is valid as the draft spec currently stands. The Prometheus [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

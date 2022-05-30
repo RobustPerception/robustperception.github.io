@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>testing &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/testing/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 29 Jun 2020 16:59:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>testing &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Unit testing alerts with Prometheus</title>
+		<link>/unit-testing-alerts-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 26 Nov 2018 09:23:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alerting]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[promtool]]></category>
+		<category><![CDATA[testing]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4139</guid>
+
+					<description><![CDATA[In the previous post we looked at testing rules. You can also test alerts. Let's take a simple example of an alert with some templating: wget https://github.com/prometheus/prometheus/releases/download/v2.5.0/prometheus-2.5.0.linux-amd64.tar.gz tar -xzf prometheus-*.tar.gz cd prometheus-* cat &#62;rules.yml &#60;&#60;'EOF' groups: - name: example rules: - alert: MyAlert expr: avg without(instance)(up) &#60; 0.75 for: 2m labels: severity: page annotations: description: 'Only [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Unit testing rules with Prometheus</title>
+		<link>/unit-testing-rules-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 19 Nov 2018 10:58:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[testing]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4131</guid>
+
+					<description><![CDATA[As of 2.5.0, promtool has a feature to allow you to test your recording rules. PromQL is a powerful language, and it's possible to write expressions that don't quite do what you expect. As with programming generally, unit tests can help you detect such problems and reduce the chances of inadvertent breakage in the future. [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How to unit test Prometheus instrumentation</title>
+		<link>/how-to-unit-test-prometheus-instrumentation</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 10 Jul 2017 08:37:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[testing]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2988</guid>
+
+					<description><![CDATA[If you've determined a metric should be tested, how do you go about that? While you shouldn't automatically test metrics, Prometheus client libraries offer facilities to make it as easy as possible to do so. &#160; Taking Python as an example, let's say we had a counter that we wanted to check was incremented: from [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>When should you unit test instrumentation?</title>
+		<link>/when-should-you-unit-test-instrumentation</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 03 Jul 2017 09:40:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[testing]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2971</guid>
+
+					<description><![CDATA[Should you unit test every bit of instrumentation you add? Not always. &#160; I've noticed that some are fanatic about unit testing everything, including all metric instrumentation. While unit testing is generally a good idea, mandating it is not always a win. For example if you're writing an RPC library that had request logs as [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

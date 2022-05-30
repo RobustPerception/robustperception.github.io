@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>remote read &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/remote-read/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 22 Jun 2020 09:43:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>remote read &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Remote read and partial failures</title>
+		<link>/remote-read-and-partial-failures</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 22 Jun 2020 09:43:25 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[remote read]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5441</guid>
+
+					<description><![CDATA[What happens when your clustered storage fails? A key design principle of Prometheus is reliability. Part of this is that it doesn't have any hard dependencies on clustered systems, such as on Zookeeper, Kafka, or Cassandra that may have issues if there's fun like a network partition. As long as Prometheus has network access to [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Accessing data from Prometheus 1.x in Prometheus 2.0</title>
+		<link>/accessing-data-from-prometheus-1-x-in-prometheus-2-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 06 Nov 2017 16:04:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[remote read]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3389</guid>
+
+					<description><![CDATA[Prometheus 2.x has a different data format from 1.x, so how do you access your old data from 2.x? Prometheus 2.0 isn't out yet, but let's look at one of the migration issues. Due to nature of Prometheus 1.x's storage, doing a direct migration of the data isn't very practical and the tooling for that [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 1.8.0</title>
+		<link>/new-features-in-prometheus-1-8-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 09 Oct 2017 08:00:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<category><![CDATA[remote read]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3374</guid>
+
+					<description><![CDATA[After 1.7.0 back in June, Prometheus 1.8.0 is now out. Let’s look at what has changed. The most notable new feature is the addition of a remote read endpoint to Prometheus. This allows a Prometheus server to use remote read against another Prometheus server. This is primarily intended to allow for transparently accessing older data in Prometheus 1.x from Prometheus [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using the CrateDB Prometheus adapter</title>
+		<link>/using-the-cratedb-prometheus-adapter</link>
+		
+		<dc:creator><![CDATA[Conor Broderick]]></dc:creator>
+		<pubDate>Mon, 02 Oct 2017 09:17:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[remote read]]></category>
+		<category><![CDATA[remote write]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3259</guid>
+
+					<description><![CDATA[While Prometheus' local storage provides us with a simple storage setup it is limited to the amount of data that can fit on one machine. Recently several long term storage options for Prometheus have come on the scene. In this blogpost we'll look at setting up the CrateDB Prometheus Adapter, which we developed on behalf [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>PromQL queries against SQL databases using a read adapter</title>
+		<link>/promql-queries-against-sql-databases-using-a-read-adapter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 24 Apr 2017 09:38:08 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[remote read]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2756</guid>
+
+					<description><![CDATA[Prometheus 1.6 includes a new experimental feature called remote read. Let's look at what it can do. Long term storage is one of the most requested features of Prometheus. The remote write path allows streaming data out of Prometheus, and the new remote read allows pulling that data back in PromQL queries. While long term storage [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

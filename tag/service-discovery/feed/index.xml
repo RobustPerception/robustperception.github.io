@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>service discovery &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/service-discovery/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 22 Feb 2021 18:58:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>service discovery &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Why can&#8217;t I use the nodename of a machine as the instance label?</title>
+		<link>/why-cant-i-use-the-nodename-of-a-machine-as-the-instance-label</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 01 Jul 2019 08:43:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4484</guid>
+
+					<description><![CDATA[The machine knows its own name, couldn't Prometheus use it? This is a not uncommon question about Prometheus and service discovery. If you run uname -n you'll see a machine's nodename, and this is something that'd be useful to have as part of your instance label. The node exporter even exposes it as the nodename [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Push needs Service Discovery</title>
+		<link>/push-needs-service-discovery</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 22 May 2017 08:27:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[push]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2844</guid>
+
+					<description><![CDATA[It's often claimed that an advantage of push-based monitoring systems is that, compared to pull-based systems like Prometheus, they don't need service discovery. This isn't true, and I'm going to explain why. &#160; Firstly we need to clearly state which type of push and pull I'm talking about, as there's several variants. Here who makes the [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 1.3.0</title>
+		<link>/new-features-in-prometheus-1-3-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 07 Nov 2016 10:10:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[releases]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2339</guid>
+
+					<description><![CDATA[Less than a month after 1.2.0, Prometheus 1.3.0 is out. Let's take a look. The big change in this release is that Kubernetes service discovery has been completely reworked, so if you were using this service discovery mechanism you'll need to redo your configs and relabelling. Keeping with service discovery, GCE discovery has additional metadata that [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Controlling the instance label</title>
+		<link>/controlling-the-instance-label</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 15 Aug 2016 07:42:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=2100</guid>
+
+					<description><![CDATA[In a previous post I said that rather than adding another label such as host or alias to a target to give it a useable name, you should instead change the instance label. Let's see how you do that. In Prometheus the instance label uniquely identifies a target within a job. It may be a DNS name [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Target labels are for life, not just for Christmas</title>
+		<link>/target-labels-are-for-life-not-just-for-christmas</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 25 Jul 2016 22:16:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=2014</guid>
+
+					<description><![CDATA[How should you choose the labels to put on your Prometheus monitoring targets? Let's take a look. Target labels are a key aspect of scraping, as they tell you what the target is. They come from service discovery, which is combined with relabelling to extract the labels that make sense in your organisation. There are a [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Finding Consul services to monitor with Prometheus</title>
+		<link>/finding-consul-services-to-monitor-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 06 Jul 2016 17:17:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[consul]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1969</guid>
+
+					<description><![CDATA[One of the service discovery methods Prometheus supports is Consul. Let's look at how to use it. Finding targets happens in two stages. First a service discovery method such as Consul returns potential targets with metadata. Secondly relabelling allows you to choose which of those targets you want to scrape, and how to convert the [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 0.20.0</title>
+		<link>/new-features-in-prometheus-0-20-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Thu, 16 Jun 2016 13:24:05 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1916</guid>
+
+					<description><![CDATA[Just 4 weeks after 0.19.0 was released, Prometheus 0.20.0 is out. This is a smaller release than usual, but with some breaking changes you need to be aware of. As we prepare for a 1.0 release, we're taking taking to opportunity to remove various inconsistencies and warts in Prometheus. There are two such changes in [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Life of a Label</title>
+		<link>/life-of-a-label</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 09 Mar 2016 22:34:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1589</guid>
+
+					<description><![CDATA[Prometheus labels allow you to model your application deployment in the manner best suited to your organisation. As directly supporting every potential configurations would be impossible, we offer relabelling to give you the flexibility to configure things how you'd like. How labels propagate can be a bit tricky to get your head around initially. The basic principle is [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using JSON file service discovery with Prometheus</title>
+		<link>/using-json-file-service-discovery-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Fri, 19 Feb 2016 19:36:23 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1553</guid>
+
+					<description><![CDATA[Prometheus offers a number of ways to find the targets to scrape, DNS, EC2, Consul, Kubernetes, Zookeeper and Marathon. But what if what you aren't using one of those? It's not possible for Prometheus to support every possible environment, and attempting to do so out of the box would make things rather unwieldy. Instead in [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>You look good, have you lost machines?</title>
+		<link>/you-look-good-have-you-lost-machines</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Dec 2015 17:43:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[configuration management]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1413</guid>
+
+					<description><![CDATA[Whether you're on bare metal or using a cloud provider, there's a question you should always be able to answer. What machines do I have, and what is meant to be running on them? Production infrastructure is not static. Services get created and obsoleted. Machines get brought up and turned-down. As organizations grow and systems get ever [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

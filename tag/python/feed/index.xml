@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>python &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/python/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 07 Dec 2020 11:15:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>python &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Choosing your pushgateway grouping key</title>
+		<link>/choosing-your-pushgateway-grouping-key</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 07 Dec 2020 11:15:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[pushgateway]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5802</guid>
+
+					<description><![CDATA[What does and doesn't make a good grouping key? Pushgateway grouping keys are fundamentally target labels, and similar considerations apply. They should be minimal and they should be constant. What the latter means may be a little non-obvious for batch jobs though. The purpose of the Pushgateway is to hold metrics from the end of [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Creating Alertmanager Silences from Python</title>
+		<link>/creating-alertmanager-silences-from-python</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 06 Jul 2020 09:37:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alertmanager]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5457</guid>
+
+					<description><![CDATA[We recently looked at creating silences from the command line, what about from programs? While shell scripting for automated tasks is common, beyond a certain point their complexity justifies a different programming language be employed - such as Python. While you could shell out to amtool to create silences, there's also a simple REST API [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Monthly reporting with Prometheus and Python</title>
+		<link>/monthly-reporting-with-prometheus-and-python</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 25 Feb 2019 10:11:56 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4216</guid>
+
+					<description><![CDATA[It's common to want reports from Prometheus, such as how many requests failed over an entire month. While PromQL has some calendar functions, it's designed more for doing math over arbitrary fixed time periods rather than time periods that vary over time due to business logic. Which is to say that as different months have [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Checking OpenMetrics output is valid</title>
+		<link>/checking-openmetrics-output-is-valid</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 10 Dec 2018 08:54:25 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[openmetrics]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4146</guid>
+
+					<description><![CDATA[The Python client can be used to check if a given metrics output is valid OpenMetrics format. The OpenMetrics format is near completion with the last few details still being determined, but if you're working on an implementation you can check if what you have is valid as the draft spec currently stands. The Prometheus [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Why predeclare metrics?</title>
+		<link>/why-predeclare-metrics</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 13 Aug 2018 06:31:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3999</guid>
+
+					<description><![CDATA[The standard way to use metrics in Prometheus is to declare them at file level, before using them. Why? If you look at a typical use of direct instrumentation with Prometheus, it will look something like: REQUESTS = Counter('my_requests_total', 'Requests made') def some_function():   REQUESTS.inc() And not: def some_function():   prometheus.inc("my_requests_total") Why is the former [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How to unit test Prometheus instrumentation</title>
+		<link>/how-to-unit-test-prometheus-instrumentation</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 10 Jul 2017 08:37:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[testing]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2988</guid>
+
+					<description><![CDATA[If you've determined a metric should be tested, how do you go about that? While you shouldn't automatically test metrics, Prometheus client libraries offer facilities to make it as easy as possible to do so. &#160; Taking Python as an example, let's say we had a counter that we wanted to check was incremented: from [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Productive Prometheus Python Parsing</title>
+		<link>/productive-prometheus-python-parsing</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 08 May 2017 09:20:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[parser]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2723</guid>
+
+					<description><![CDATA[Prometheus client libraries don't just export metrics in our format, they can parse that format too. Even if you don't run Prometheus, the Prometheus exposition format can be useful to you. By having a standard format exposed by a wide variety of integrations, you gain access to metrics that you'd have to otherwise figure out how [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Label Lookups and the Child</title>
+		<link>/label-lookups-and-the-child</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 27 Feb 2017 10:59:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[client libraries]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2547</guid>
+
+					<description><![CDATA[The Prometheus client library guidelines recommend having a Child be returned via labels(). Why? A common misstep made by those implementing client libraries for Prometheus is to have usage for labels looking something like: MY_COUNTER = prometheus_client.Counter('my_counter_total', 'help', ['labelname']) MY_COUNTER.inc(['labelvalue'], 2.0) # Don't do this. Whereas the correct pattern looks something like: MY_COUNTER = prometheus_client.Counter('my_counter_total', 'help', ['labelname']) MY_COUNTER.labels('labelvalue').inc(2.0) Why [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Memory usage of Prometheus client libraries</title>
+		<link>/memory-usage-of-prometheus-client-libraries</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 02 Jan 2017 08:32:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2445</guid>
+
+					<description><![CDATA[A common question around Prometheus client libraries is how much RAM they'll use on a busy process. There tends to be disbelief when we say it's the same as an inactive server. Let's look deeper. &#160; The simplest way to test this is a small benchmark: from prometheus_client import Counter import resource print("Before creating counters: ", resource.getrusage(0).ru_maxrss) [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Prometheus query results as CSV</title>
+		<link>/prometheus-query-results-as-csv</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 31 Oct 2016 08:09:30 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[csv]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2331</guid>
+
+					<description><![CDATA[The default JSON output isn't always what you want when querying Prometheus. Let's see how to get out CSV files. I've written a small Python program to show how you can view the output of an instant query as CSV files. Let's see it in action against the live demo: pip install requests # If you [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

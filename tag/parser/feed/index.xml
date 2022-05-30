@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>parser &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/parser/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 08 May 2017 09:20:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>parser &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Productive Prometheus Python Parsing</title>
+		<link>/productive-prometheus-python-parsing</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 08 May 2017 09:20:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[parser]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2723</guid>
+
+					<description><![CDATA[Prometheus client libraries don't just export metrics in our format, they can parse that format too. Even if you don't run Prometheus, the Prometheus exposition format can be useful to you. By having a standard format exposed by a wide variety of integrations, you gain access to metrics that you'd have to otherwise figure out how [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

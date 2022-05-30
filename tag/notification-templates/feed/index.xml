@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>notification templates &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/notification-templates/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Wed, 08 Nov 2017 15:04:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>notification templates &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Using labels to direct email notifications</title>
+		<link>/using-labels-to-direct-email-notifications</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 13 Feb 2017 10:36:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alerting]]></category>
+		<category><![CDATA[alertmanager]]></category>
+		<category><![CDATA[notification templates]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2429</guid>
+
+					<description><![CDATA[A handy feature of the Alertmanager is that almost all notification fields are templatable. This can be used to route emails based on labels. If you are sending email notifications directly to customers, it'd be useful not to have to create a route and receiver per customer in the Alertmanager. This can be useful whether you [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Alertmanager Notification Templating with Slack</title>
+		<link>/alertmanager-notification-templating-with-slack</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 19 Sep 2016 07:49:23 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alertmanager]]></category>
+		<category><![CDATA[notification templates]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[slack]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=2223</guid>
+
+					<description><![CDATA[We've already looked at how to setup Slack with the Alertmanager, and saw the default notification. Wouldn't it be nice to customise it? I'm going to presume we already have a working Slack and Alertmanager setup. Let's say we have two alerts firing with the labels {alertname="MyAlert",instance="host1"} and {alertname="MyAlert",instance="host2"} that are going to our Slack receiver, and we want [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

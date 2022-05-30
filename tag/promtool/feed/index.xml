@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>promtool &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/promtool/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 11 Feb 2019 10:30:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>promtool &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>&#8220;INVALID&#8221; is not a valid start token and other scrape errors</title>
+		<link>/invalid-is-not-a-valid-start-token-and-other-scrape-errors</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 11 Feb 2019 10:30:51 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[debugging]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promtool]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4277</guid>
+
+					<description><![CDATA[What can you do to pin down metrics-parsing related scrape errors in Prometheus? Not all scrape errors are due to network or HTTP issues. There's also a variety of parsing errors that are possible including "INVALID" is not a valid start token, strconv.ParseFloat: parsing "...": invalid syntax, expected timestamp or new record, got "MNAME" and expected label name, got [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How to check your prometheus.yml is valid</title>
+		<link>/how-to-check-your-prometheus-yml-is-valid</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 03 Dec 2018 11:37:47 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promtool]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4153</guid>
+
+					<description><![CDATA[It's nice to check that your configuration is valid before pushing to production. Prometheus will gracefully fail to reload if there's a bad configuration, but will fail to start if there isn't one at startup. Thus it's wise to check that the configuration is good before checking it in via continuous integration or similar mechanisms. [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Unit testing alerts with Prometheus</title>
+		<link>/unit-testing-alerts-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 26 Nov 2018 09:23:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alerting]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[promtool]]></category>
+		<category><![CDATA[testing]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4139</guid>
+
+					<description><![CDATA[In the previous post we looked at testing rules. You can also test alerts. Let's take a simple example of an alert with some templating: wget https://github.com/prometheus/prometheus/releases/download/v2.5.0/prometheus-2.5.0.linux-amd64.tar.gz tar -xzf prometheus-*.tar.gz cd prometheus-* cat &#62;rules.yml &#60;&#60;'EOF' groups: - name: example rules: - alert: MyAlert expr: avg without(instance)(up) &#60; 0.75 for: 2m labels: severity: page annotations: description: 'Only [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>reliability &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/reliability/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Wed, 26 Aug 2020 15:42:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>reliability &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Don&#8217;t cross the screams: Monitoring across failure domains</title>
+		<link>/dont-cross-the-screams-monitoring-across-failure-domains</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 04 Nov 2019 08:52:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4737</guid>
+
+					<description><![CDATA[Scraping targets across datacenters will make things better, right? If a datacenter goes down, it'd seem useful to have monitoring of its targets from outside it. That way even though the Prometheus within the malfunctioning datacenter may be broken, you'd still get metrics. This is enticing, but generally not useful in practice. External monitoring of [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Looking beyond retention</title>
+		<link>/looking-beyond-retention</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2019 08:07:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4608</guid>
+
+					<description><![CDATA[How can you view older data, while keeping your monitoring reliable? Prometheus is designed around the notion of reliability of monitoring, it only needs local disk and network access to work. There's no complex clustering or distributed systems, even federation is designed with the idea that it's a normal scrape so it's easy to reason [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>What queries were running when Prometheus died?</title>
+		<link>/what-queries-were-running-when-prometheus-died</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 09 Sep 2019 09:17:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4595</guid>
+
+					<description><![CDATA[As of Prometheus 2.12.0 there's a new feature to help find problematic queries. While Prometheus has many features to limit the potential impacts of expensive PromQL queries on your monitoring, it's still possible that you'll run into something not covered or there aren't sufficient resources provisioned. As of Prometheus 2.12.0 any queries which were running [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Putting queues in front of Prometheus for reliability</title>
+		<link>/putting-queues-in-front-of-prometheus-for-reliability</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 05 Aug 2019 09:46:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[push]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4554</guid>
+
+					<description><![CDATA[On a regular basis a potential Prometheus user says they need a different architecture to make things reliable or scalable. Let's look at that. Once or twice a month I see someone propose a Prometheus architecture that looks something like this: Applications push metrics to some form of queue (usually Kafka), an exposer binary reads [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Idempotent Cron Jobs are Operable Cron Jobs</title>
+		<link>/idempotent-cron-jobs-are-operable-cron-jobs</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 17 Jun 2019 07:02:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alerting]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4468</guid>
+
+					<description><![CDATA[Having to reconstruct how far a failed cron job had gotten and what exact parameters it was run with can be error prone and time consuming. There is a better way. I assume I'm not the only one who at some point or other has been woken up due to a single run of a [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Limiting PromQL resource usage</title>
+		<link>/limiting-promql-resource-usage</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 17 Dec 2018 09:15:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4170</guid>
+
+					<description><![CDATA[Prometheus has gained a number of features to limit the impact of expensive PromQL queries. If someone runs a resource intensive query, such as aggregating across thousands of individual time series over a long time period, it's not unknown for it to eat CPU and RAM. In the worst case, Prometheus can get killed by [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Dealing with &#8220;too many open files&#8221;</title>
+		<link>/dealing-with-too-many-open-files</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 27 Aug 2018 07:02:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4031</guid>
+
+					<description><![CDATA[While not a problem specific to Prometheus, being affected by the open files ulimit is something you're likely to run into at some point. Ulimits are an old Unix feature that allow limiting how much resources a user uses, such as processes, CPU time, and various types of memory. You can view your shell's current [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using sample_limit to avoid overload</title>
+		<link>/using-sample_limit-to-avoid-overload</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 05 Mar 2018 09:01:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3753</guid>
+
+					<description><![CDATA[Worried that your application metrics might suddenly explode in cardinality? sample_limit can save you. Like many things in life, labels are great in moderation. When a label with user's Id or email address is added to a metric though it is not likely to end well, as suddenly one of your targets could be pumping [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>High Availability Prometheus Alerting and Notification</title>
+		<link>/high-availability-prometheus-alerting-and-notification</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 17 Jul 2017 08:55:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alertmanager]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3014</guid>
+
+					<description><![CDATA[Prometheus is architected for reliability of alerting, how do you set it up? For a setup that can gracefully handle any machine failing, we'll need to run two Prometheus servers and two Alertmanagers. First we'll run the Alertmanagers on different machines, and setup a mesh between them: # On a machine named "am-1": wget https://github.com/prometheus/alertmanager/releases/download/v0.15.3/alertmanager-0.15.3.linux-amd64.tar.gz tar [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Monitoring without Consensus</title>
+		<link>/monitoring-without-consensus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Thu, 14 Jul 2016 21:11:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1254</guid>
+
+					<description><![CDATA[When designing a monitoring system and the datastore that goes with it, it can be tempting to go straight for a clustered highly consistent approach. But is that the best approach? Monitoring, like all other systems, is a question of engineering tradeoffs. For a medical system you'd probably choose to go for a completely reliable [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

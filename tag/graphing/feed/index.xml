@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>graphing &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/graphing/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 29 Apr 2019 08:27:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>graphing &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Avoid the Wall of Graphs</title>
+		<link>/avoid-the-wall-of-graphs</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 29 Apr 2019 08:27:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[graphing]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4404</guid>
+
+					<description><![CDATA[Data is not the same as information. As your system grows, new features are added and outages analysed it's natural for your dashboards to gain new graphs over time. It's usually a slow process, however the end result is almost always the same: a dashboard overloaded with graphs that's hard to interpret for someone without [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Irate graphs are better graphs</title>
+		<link>/irate-graphs-are-better-graphs</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Sat, 17 Oct 2015 08:54:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[graphing]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=957</guid>
+
+					<description><![CDATA[Prometheus 0.16.1 was just released, and with it brings my addition of the irate function. This offers more responsive graphs and higher resolution dashboards. The rate function takes a time series over a time range, and based on the first and last data points within that range (allowing for counter resets) calculates a per-second rate. As it's based on the [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

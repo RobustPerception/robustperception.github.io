@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>golang &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/golang/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 24 Aug 2020 09:13:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>golang &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Failing a scrape with the Prometheus Go client</title>
+		<link>/failing-a-scrape-with-the-prometheus-go-client</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 24 Aug 2020 09:13:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5581</guid>
+
+					<description><![CDATA[As previously mentioned partial failure is hard to deal with. Usually when an exporter is scraped the communication with whatever application it is talking to all goes fine, and the scrape is successful. What happens though if one command or RPC fails? The exporter guidelines generally recommend returning a HTTP 500 in that case to [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Prometheus Middleware for Gorilla Mux</title>
+		<link>/prometheus-middleware-for-gorilla-mux</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 16 Mar 2020 09:13:30 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5202</guid>
+
+					<description><![CDATA[Your HTTP router is usually the best place to measure your application latency. If you ever find yourself wanting to use the same metric from multiple files, that's usually a sign that either they should in fact be different metrics or that the metric belongs higher in the call stack. For example rather than having [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Optimising Prometheus 2.6.0 Memory Usage with pprof</title>
+		<link>/optimising-prometheus-2-6-0-memory-usage-with-pprof</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Jan 2019 10:48:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[profiling]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4241</guid>
+
+					<description><![CDATA[The 2.6.0 release of Prometheus includes optimisations to reduce the memory taken by indexes and compaction. There have been some reports that compaction was causing larger memory spikes than was desirable. I dug into this and improved it for Prometheus 2.6.0, so let's see how. Firstly I wrote a test setup that created some samples for [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Optimising startup time of Prometheus 2.6.0 with pprof</title>
+		<link>/optimising-startup-time-of-prometheus-2-6-0-with-pprof</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 07 Jan 2019 09:15:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[profiling]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4189</guid>
+
+					<description><![CDATA[The 2.6.0 release of Prometheus includes WAL loading optimisations to make startup faster. The informal design goal of the Prometheus 2.x TSDB startup was that it should take no more than about a minute. Over the past few months there's been reports of it taking quite a bit more than this, which is a problem [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Measuring the performance impact of Meltdown/Spectre with Prometheus</title>
+		<link>/measuring-the-performance-impact-of-meltdownspectre-with-promtheus</link>
+		
+		<dc:creator><![CDATA[Conor Broderick]]></dc:creator>
+		<pubDate>Mon, 08 Jan 2018 09:50:15 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[loadtesting]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3613</guid>
+
+					<description><![CDATA[The world of infosec is alarmed right now over the recent security vulnerabilities disclosed by Google on Wednesday that affect Intel, AMD, and ARM chips. The now infamous Meltdown and Spectre bugs allow for the reading of sensitive information from a system's memory, including passwords, private keys and other sensitive information. Thankfully fixes are being swiftly [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Setting a Prometheus Counter</title>
+		<link>/setting-a-prometheus-counter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 07 Aug 2017 08:20:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3116</guid>
+
+					<description><![CDATA[We're often asked how to call set() on a Counter. So how do you do that? &#160; You don't. &#160; Counters only go up, so the only operation that makes sense is to increment them. This is not something you ever need when directly instrumenting your own code. &#160; When users ask for this it always [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Optimising Go allocations using pprof</title>
+		<link>/optimising-go-allocations-using-pprof</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 23 Jan 2017 08:30:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[profiling]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2502</guid>
+
+					<description><![CDATA[As I mentioned in a previous post, I made some memory-related improvements to Prometheus that'll be in the 1.5 release. Let's look at how I came across unneeded memory allocations and ultimately improved the code. &#160; My initial goal was to provide guidance to Prometheus users on how many resources they should provision for a given load and what flag [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

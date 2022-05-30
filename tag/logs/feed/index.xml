@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>logs &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/logs/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 27 Jan 2020 09:29:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>logs &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Getting metrics from Apache logs using the grok exporter</title>
+		<link>/getting-metrics-from-apache-logs-using-the-grok-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 27 Jan 2020 09:29:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[exporters]]></category>
+		<category><![CDATA[logs]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5096</guid>
+
+					<description><![CDATA[Not all applications produce useful metrics, but some of them do produce logs. There are a class of applications which have little to no useful metrics, however the information you'd like to have can be found in logs. One option to deal with this is the grok exporter. Let's say you were working with Apache, [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

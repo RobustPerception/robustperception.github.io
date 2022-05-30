@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>remote write &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/remote-write/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 21 Dec 2020 10:29:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>remote write &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Policy is for configuration, not metric names</title>
+		<link>/policy-is-for-configuration-not-metric-names</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Dec 2020 10:29:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[federation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[remote write]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5845</guid>
+
+					<description><![CDATA[Metric names are part of a time series's identity, so shouldn't include information unrelated to identity. I previously looked at some of the consideration for choosing target labels. Similar applies to the names of metrics, you want something descriptive but not longer than it needs to be. In this context, I'd like to talk about [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Evaluating Performance and Correctness</title>
+		<link>/evaluating-performance-and-correctness</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 18 Nov 2019 12:32:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[remote write]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4756</guid>
+
+					<description><![CDATA[There's more to selecting a piece of software than headline numbers. At PromCon there was a talk in which the speaker had found that VictoriaMetrics had compression far beyond what other solutions like Thanos have, as in 3-4x. During the social event there were questions from some attendees as to whether there are optimisations that [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using the CrateDB Prometheus adapter</title>
+		<link>/using-the-cratedb-prometheus-adapter</link>
+		
+		<dc:creator><![CDATA[Conor Broderick]]></dc:creator>
+		<pubDate>Mon, 02 Oct 2017 09:17:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[remote read]]></category>
+		<category><![CDATA[remote write]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3259</guid>
+
+					<description><![CDATA[While Prometheus' local storage provides us with a simple storage setup it is limited to the amount of data that can fit on one machine. Recently several long term storage options for Prometheus have come on the scene. In this blogpost we'll look at setting up the CrateDB Prometheus Adapter, which we developed on behalf [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using the remote write path</title>
+		<link>/using-the-remote-write-path</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 17 Oct 2016 08:25:23 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[remote write]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2273</guid>
+
+					<description><![CDATA[Recent versions of Prometheus added an experimental remote write feature. Let's take a look. &#160; Prometheus's local storage isn't intended as a long term data store, rather as more of an ephemeral cache. This is as storing effectively unbounded amounts of time series data would require a distributed storage system, whose reliability characteristics would not be [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

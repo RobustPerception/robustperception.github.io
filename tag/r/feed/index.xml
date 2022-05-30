@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>R &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/r/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 21 Oct 2019 09:28:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>R &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Analysing data from Grafana graphs in R</title>
+		<link>/analysing-data-from-grafana-graphs-in-r</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Thu, 08 Aug 2019 11:25:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grafana]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[R]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4685</guid>
+
+					<description><![CDATA[PromQL is superb for metrics alerting and graphing needs, for heavier statistical work there are better options. R is one of the standard pieces of software for doing statistics, with many libraries available for it. I'm not going to go into great depth into R itself, as that's a very big topic but just give [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

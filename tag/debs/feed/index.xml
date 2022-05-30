@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>debs &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/debs/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Fri, 12 Oct 2018 11:32:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>debs &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Machine Monitoring with Prometheus Debs</title>
+		<link>/machine-monitoring-with-prometheus-debs</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Tue, 08 Sep 2015 12:19:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[debs]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=814</guid>
+
+					<description><![CDATA[CPU, RAM, disk and network usage are basic machine metrics you should be monitoring. This is easy with Prometheus and the later releases of Debian. The node exporter is the agent for machine monitoring for Prometheus. If you're on a Debian-based system such as Ubuntu, debs are available from the default official Debian repositories. You can [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

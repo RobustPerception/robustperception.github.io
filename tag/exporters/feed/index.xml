@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>exporters &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/exporters/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 27 Jan 2020 09:29:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>exporters &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Getting metrics from Apache logs using the grok exporter</title>
+		<link>/getting-metrics-from-apache-logs-using-the-grok-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 27 Jan 2020 09:29:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[exporters]]></category>
+		<category><![CDATA[logs]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5096</guid>
+
+					<description><![CDATA[Not all applications produce useful metrics, but some of them do produce logs. There are a class of applications which have little to no useful metrics, however the information you'd like to have can be found in logs. One option to deal with this is the grok exporter. Let's say you were working with Apache, [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Getting Cloudwatch data into Prometheus</title>
+		<link>/getting-cloudwatch-data-into-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 28 Oct 2019 17:30:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cloudwatch exporter]]></category>
+		<category><![CDATA[exporters]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4706</guid>
+
+					<description><![CDATA[Among the many integrations for Prometheus is the Cloudwatch exporter. First off to access Cloudwatch we need premissions, so setup an IAM user with the CloudWatchReadOnlyAccess policy. There's a few ways to provide the credentials, one is to use credential profile files: $ aws configure AWS Access Key ID [********************]: enter_your_access_key_here AWS Secret Access Key [********************]: [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Dude, where&#8217;s my exporter?</title>
+		<link>/dude-wheres-my-exporter</link>
+		
+		<dc:creator><![CDATA[Conor Broderick]]></dc:creator>
+		<pubDate>Mon, 26 Feb 2018 08:31:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[exporters]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3740</guid>
+
+					<description><![CDATA[So you have just discovered Prometheus and want to try it out or use it to replace your old monitoring system but have run into a part of your stack that you cannot instrument with a client library and for which there are no officially supported exporters. What do you do? Thankfully, you're in luck [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Percentages go from 0 to 100, Ratios go from 0 to 1</title>
+		<link>/percentages-go-from-0-to-100-ratios-go-from-0-to-1</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 25 Sep 2017 09:33:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[exporters]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3192</guid>
+
+					<description><![CDATA[While doing research for implementing exporters, I've noticed some confusion around ratios and percentages that I'd like to clear up. The master/cpu_percent metric in Mesos is an example of this. As it has the word "percent" in it, you'd expect it to have values from 0 to 100 indicating the current cpu usage percentage. In fact it has [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Writing JSON Exporters in Python</title>
+		<link>/writing-json-exporters-in-python</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 19 Aug 2015 14:51:15 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[exporters]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=738</guid>
+
+					<description><![CDATA[A common question is is there a way to ingest JSON metrics from a random system into Prometheus? It's not possible to extract useful metrics from an arbitrary JSON blob, so that's not something the can be offered out of the box. However it's easy to write an exporter in Python to produce meaningful metrics. [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>
