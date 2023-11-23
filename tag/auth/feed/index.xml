@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>auth &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/auth/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 29 Jan 2018 09:04:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>auth &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Adding Basic Auth to Prometheus with Apache</title>
+		<link>/adding-basic-auth-to-prometheus-with-apache</link>
+		
+		<dc:creator><![CDATA[Conor Broderick]]></dc:creator>
+		<pubDate>Mon, 29 Jan 2018 09:04:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[auth]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3591</guid>
+
+					<description><![CDATA[Having previously discussed why the Prometheus project does not support SSL and user authentication out of the box and detailing how to add basic authentication with Nginx, we will now demonstrate how to do the same with Apache. Assuming you have Apache server installed on your machine, open up the httpd.conf configuration file located at [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Prometheus Security: Authentication, Authorization and Encryption</title>
+		<link>/prometheus-security-authentication-authorization-and-encryption</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Thu, 02 Jun 2016 19:08:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[auth]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1850</guid>
+
+					<description><![CDATA[It's a frequently asked question as to how to do various security related features with Prometheus. Let's take a deeper look at why we chose the approach we did. &#160; The Prometheus project takes the stance that server side security features are outside its scope. This is one of our most questioned product decisions. To see why we [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Adding Basic Auth to Prometheus with Nginx</title>
+		<link>/adding-basic-auth-to-prometheus-with-nginx</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Tue, 11 Aug 2015 15:58:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[auth]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">http://aveclabs.com/?p=580</guid>
+
+					<description><![CDATA[Prometheus doesn't provide authentication support in order to focus energy on making an awesome monitoring tool. Instead users can take advantage of a more purpose designed tool such as Nginx to do so. This post will look at how you can do that. To start you should install Nginx. Next let's get a basic Ngingx [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

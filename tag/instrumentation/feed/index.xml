@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>instrumentation &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/instrumentation/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Thu, 21 Jan 2021 09:08:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>instrumentation &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Failing a scrape with the Prometheus Go client</title>
+		<link>/failing-a-scrape-with-the-prometheus-go-client</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 24 Aug 2020 09:13:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5581</guid>
+
+					<description><![CDATA[As previously mentioned partial failure is hard to deal with. Usually when an exporter is scraped the communication with whatever application it is talking to all goes fine, and the scrape is successful. What happens though if one command or RPC fails? The exporter guidelines generally recommend returning a HTTP 500 in that case to [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Prometheus Middleware for Gorilla Mux</title>
+		<link>/prometheus-middleware-for-gorilla-mux</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 16 Mar 2020 09:13:30 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5202</guid>
+
+					<description><![CDATA[Your HTTP router is usually the best place to measure your application latency. If you ever find yourself wanting to use the same metric from multiple files, that's usually a sign that either they should in fact be different metrics or that the metric belongs higher in the call stack. For example rather than having [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Regex Selectors are a Smell</title>
+		<link>/regex-selectors-are-a-smell</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 24 Feb 2020 09:45:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5170</guid>
+
+					<description><![CDATA[Have you ever found yourself having to keep on updating and tweaking certain regexes in PromQL? A smell doesn't automatically mean that something is bad. A smell is a sign however that you might want to take a closer look, that there might be a better way to do things. Let's say you saw a [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Target labels, not metric name prefixes</title>
+		<link>/target-labels-not-metric-name-prefixes</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 02 Dec 2019 08:47:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4741</guid>
+
+					<description><![CDATA[Services are not distinguished by their metric names in Prometheus. With the dotted.string.style of metrics it's usual to prefix metrics with the host they're on, environment, datacenter, application, and so on. This is however not the way to handle things in Prometheus whose labels provide a more powerful data model. In addition Prometheus has a [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How does a Prometheus Histogram work?</title>
+		<link>/how-does-a-prometheus-histogram-work</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 30 Sep 2019 09:06:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[client libraries]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4634</guid>
+
+					<description><![CDATA[We looked previously at the counter, gauge, and summary, how does the Prometheus histogram work? The histogram has several similarities to the summary. A histogram is a combination of various counters. Like summary metrics, histogram metrics are used to track the size of events, usually how long they take, via their observe method. There's usually also [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How does a Prometheus Summary work?</title>
+		<link>/how-does-a-prometheus-summary-work</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 25 Mar 2019 10:22:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[client libraries]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4328</guid>
+
+					<description><![CDATA[We looked previously at the counter and gauge, how does the Prometheus summary work? A summary is a combination of other types, to make common patterns simpler to use. A summary consists of two counters, and optionally some gauges. Summary metrics are used to track the size of events, usually how long they take, via their observe [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How many metrics should an application return?</title>
+		<link>/how-many-metrics-should-an-application-return</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 29 Oct 2018 08:51:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4088</guid>
+
+					<description><![CDATA[While each application is different, a rough idea of how many metric there should be would be useful. When starting out with instrumentation there's often uncertainty as to how many metrics and time series is too few or too much. I'd like to give some rules of thumb to help judge if the metric data [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Instrumenting a Ruby on Rails Application with Prometheus</title>
+		<link>/instrumenting-a-ruby-on-rails-application-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Conor Broderick]]></dc:creator>
+		<pubDate>Mon, 15 Jan 2018 09:26:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[client]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[ruby]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3644</guid>
+
+					<description><![CDATA[In this blogpost we'll run you through a quick 'hello world' example instrumenting a Rails application with the Prometheus ruby client. (The completed sample created in this blogpost can be found here.) Create a new rails application: $ rails new prom-example Add the Prometheus client and rack gems to your Gemfile and install all of [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Are increasing timestamps Counters or Gauges?</title>
+		<link>/are-increasing-timestamps-counters-or-gauges</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 13 Nov 2017 09:09:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3487</guid>
+
+					<description><![CDATA[Every now and then someone asks what metric type a increasing timestamp should be. Let's take a look. &#160; As a brief reminder, in Prometheus counters are things that for the life of a process only ever go up. By contrast, gauges can go up and down. So lets say you had a timestamp that [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Setting a Prometheus Counter</title>
+		<link>/setting-a-prometheus-counter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 07 Aug 2017 08:20:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3116</guid>
+
+					<description><![CDATA[We're often asked how to call set() on a Counter. So how do you do that? &#160; You don't. &#160; Counters only go up, so the only operation that makes sense is to increment them. This is not something you ever need when directly instrumenting your own code. &#160; When users ask for this it always [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

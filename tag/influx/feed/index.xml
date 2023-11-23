@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>influx &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/influx/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Thu, 16 Jul 2020 19:20:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>influx &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Translating between monitoring languages</title>
+		<link>/translating-between-monitoring-languages</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 20 Feb 2017 09:35:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[graphite]]></category>
+		<category><![CDATA[influx]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2573</guid>
+
+					<description><![CDATA[There's so many monitoring systems out there these days that it's difficult to figure out what's actually different, and what just has a different name or falls under a different concept. Let's look at the Graphite, InfluxDB and Prometheus query languages and see how the same ideas are represented in each. &#160; I'm going to approach [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

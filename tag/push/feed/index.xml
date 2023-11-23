@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>push &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/push/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 21 Sep 2020 10:04:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>push &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Don&#8217;t Try to Swim Upstream</title>
+		<link>/dont-try-to-swim-upstream</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Sep 2020 10:04:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[push]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5233</guid>
+
+					<description><![CDATA[Have you ever felt that a piece of software just isn't doing what you need? Software tends to be designed with a specific set of use cases in mind, with design principles to facilitate those use cases, and then when it comes to implementation tradeoffs are made based on those principles. While it's unlikely that [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Putting queues in front of Prometheus for reliability</title>
+		<link>/putting-queues-in-front-of-prometheus-for-reliability</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 05 Aug 2019 09:46:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[push]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4554</guid>
+
+					<description><![CDATA[On a regular basis a potential Prometheus user says they need a different architecture to make things reliable or scalable. Let's look at that. Once or twice a month I see someone propose a Prometheus architecture that looks something like this: Applications push metrics to some form of queue (usually Kafka), an exposer binary reads [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>It&#8217;s easy to convert Pull to Push</title>
+		<link>/its-easy-to-convert-pull-to-push</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 11 Sep 2017 07:07:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[push]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3208</guid>
+
+					<description><![CDATA[If you have to choose one of push or pull in your core, which should it be? I'm not going to get into the pros and cons of push and pull in this article, but instead look at what the best way is to go about supporting both. I'm going to presume that we're talking about [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Which kind of push? Events or metrics?</title>
+		<link>/which-kind-of-push-events-or-metrics</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 14 Aug 2017 09:15:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[push]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3040</guid>
+
+					<description><![CDATA[Continuing in our exploration of the ongoing epic saga of push vs. pull where the very future of humanity is at stake, let's look at two general classes of push that are often conflated. &#160; An important question when looking at a push-based monitoring system is what exactly it is that you are pushing. You could [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Push needs Service Discovery</title>
+		<link>/push-needs-service-discovery</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 22 May 2017 08:27:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[push]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2844</guid>
+
+					<description><![CDATA[It's often claimed that an advantage of push-based monitoring systems is that, compared to pull-based systems like Prometheus, they don't need service discovery. This isn't true, and I'm going to explain why. &#160; Firstly we need to clearly state which type of push and pull I'm talking about, as there's several variants. Here who makes the [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>scaling &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/scaling/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Thu, 03 Feb 2022 19:14:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>scaling &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Why does Prometheus use so much RAM?</title>
+		<link>/why-does-prometheus-use-so-much-ram</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 07 Sep 2020 08:38:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[capacity]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5621</guid>
+
+					<description><![CDATA[Users are sometimes surprised that Prometheus uses RAM, let's look at that. More than once a user has expressed astonishment that their Prometheus is using more than a few hundred megabytes of RAM. A few hundred megabytes isn't a lot these days. Sure a small stateless service like say the node exporter shouldn't use much [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Putting queues in front of Prometheus for reliability</title>
+		<link>/putting-queues-in-front-of-prometheus-for-reliability</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 05 Aug 2019 09:46:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[push]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4554</guid>
+
+					<description><![CDATA[On a regular basis a potential Prometheus user says they need a different architecture to make things reliable or scalable. Let's look at that. Once or twice a month I see someone propose a Prometheus architecture that looks something like this: Applications push metrics to some form of queue (usually Kafka), an exposer binary reads [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Federation, what is it good for?</title>
+		<link>/federation-what-is-it-good-for</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 16 Jan 2017 13:24:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[federation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2421</guid>
+
+					<description><![CDATA[There's various ways Prometheus federation can be used. To ensure your monitoring is scalable and reliable, let's look at how to best use it. There are two general cases for which federation is well suited. We'll look at each in turn. Prometheus Hierarchy As previously discussed, Prometheus is intended to have at least one instance per datacenter usually [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>One agent to rule them all</title>
+		<link>/one-agent-to-rule-them-all</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Tue, 02 Aug 2016 08:27:27 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=2048</guid>
+
+					<description><![CDATA[Another not uncommon question we get about Prometheus is as to why we don't have a single per-machine agent that handles all the collection, and instead have one exporter per application. Doesn't that make it harder to manage? If you're starting from a low level of infrastructure without a machine/service database having a single on-host daemon that gets [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Do you have basic infrastructure?</title>
+		<link>/do-you-have-basic-infrastructure</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 18 Nov 2015 10:13:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[change management]]></category>
+		<category><![CDATA[configuration management]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1134</guid>
+
+					<description><![CDATA[When starting out it's easy to think that you need Docker, Kubernetes, Microservices, Continuous Deployment and all the other trending topics on Hacker News/Reddit/Lobsters. What do you really need? It's easy to get overwhelmed by all the great posts and presentations by companies sharing how they run their infrastructure, and how they've evolved it to [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Unlimited costs, Limited revenue</title>
+		<link>/unlimited-costs-limited-revenue</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 04 Nov 2015 19:31:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[abuse]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[estimation]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1081</guid>
+
+					<description><![CDATA[This week Microsoft removed unlimited storage from their OneDrive offering, because surprise surprise people were using it as unlimited storage. Does your product have features that cost you time and money, without your users paying accordingly? When starting out and trying to gain traction, it's normal to add lots of features to draw in more users. Maybe [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Avoid outages: Beware the Knee</title>
+		<link>/avoid-outages-beware-the-knee</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 02 Nov 2015 11:57:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[capacity]]></category>
+		<category><![CDATA[provisioning]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1062</guid>
+
+					<description><![CDATA[Your service's traffic is steadily growing, latency has increased a bit but it's within reason. One day you launch a new customer and the latency jumps through the roof causing an outage. What happened? You hit the knee. When shopping in a supermarket we're used to seeing queues suddenly appear, where just a few minutes [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Cooking a meal isn&#8217;t the same as running a restaurant</title>
+		<link>/cooking-a-meal-isnt-the-same-as-running-a-restaurant</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2015 19:10:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[availability]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1004</guid>
+
+					<description><![CDATA[I enjoy cooking and regularly make scrumptious meals for myself. Does this mean that I'm capable of running a busy kitchen? Of course not! So why assume that all software engineers can automatically run production services? There's more to producing a restaurant meal than being able to cook one portion of the meal. How much of each [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Monitoring: Not Just For Outages</title>
+		<link>/monitoring-not-just-for-outages</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2015 18:44:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[estimation]]></category>
+		<category><![CDATA[inclusive monitoring]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=793</guid>
+
+					<description><![CDATA[It's common to think of monitoring as something just to alert you when things are going wrong.  At Robust Perception we believe in Inclusive Monitoring, where all aspects of systems are monitored and available to provide insight and drive decisions. Monitoring means different things to different people; from manually looking at log files, to alerting on [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>There are 100,000 Seconds in a Day</title>
+		<link>/there-are-100000-seconds-in-a-day</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Sun, 23 Aug 2015 21:08:47 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[estimation]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=659</guid>
+
+					<description><![CDATA[Just after you've launched is not the best time to find out that you can't handle the load you predicted, or that running costs are much higher than you'd like. By estimating the operational parameters of your system as you design you can gain confidence that the system will work as you expect. When building your product, there's [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

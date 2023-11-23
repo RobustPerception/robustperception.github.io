@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>grafana &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/grafana/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 26 Oct 2020 08:49:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>grafana &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Show multiple expressions for an instance in a Grafana table</title>
+		<link>/show-multiple-expressions-for-an-instance-in-a-grafana-table</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 26 Oct 2020 08:49:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grafana]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5740</guid>
+
+					<description><![CDATA[Have you ever wanted to have a table showing multiple metrics across all of your instances? I'm going to show you how to show CPU usage and RSS for all of your instances, here I'm using Grafana 7.1.1 and the end result will look something like: &#160; First create a Table panel, and define your [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Analysing data from Grafana graphs in R</title>
+		<link>/analysing-data-from-grafana-graphs-in-r</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Thu, 08 Aug 2019 11:25:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grafana]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[R]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4685</guid>
+
+					<description><![CDATA[PromQL is superb for metrics alerting and graphing needs, for heavier statistical work there are better options. R is one of the standard pieces of software for doing statistics, with many libraries available for it. I'm not going to go into great depth into R itself, as that's a very big topic but just give [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Step and query_range</title>
+		<link>/step-and-query_range</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 29 Jul 2019 07:13:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grafana]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4519</guid>
+
+					<description><![CDATA[Graphs from Prometheus use the query_range endpoint, and there's a non-trivial amount of confusion that it's more magic than it actually is. The query range endpoint isn't magic, in fact it is quite dumb. There's a query, a start time, an end time, and a step. The provided query is evaluated at the start time, [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Switching between Prometheus servers in Grafana using data source variables</title>
+		<link>/switching-between-prometheus-servers-in-grafana-using-data-source-variables</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 08 Jul 2019 09:10:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grafana]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4502</guid>
+
+					<description><![CDATA[Having to maintain dashboards for every Prometheus server you have would be a bit annoying. Thankfully Grafana has a feature for this. Variables in Grafana (previously known as templates) allow parameterisation of a dashboard via a drop-down menu. Often this is used to switch between machines or services, so that you can have per-machine dashboards [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Graph top N time series in Grafana</title>
+		<link>/graph-top-n-time-series-in-grafana</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 15 Oct 2018 09:43:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grafana]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4093</guid>
+
+					<description><![CDATA[As of Grafana 5.3.0 there's a feature that allows correct graphing of the top N series over a duration. The query_range API endpoint in Prometheus which is used for graphing evaluates each step independently, so a graph like topk(5, node_scrape_collector_duration_seconds) can display far more than 5 time series. To show the top 5 over the range of [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using Geohashes with the Worldmap Panel and Prometheus</title>
+		<link>/using-geohashes-with-the-worldmap-panel-and-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 09 Apr 2018 07:55:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grafana]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3806</guid>
+
+					<description><![CDATA[Wouldn't it be nice to have arbitrary locations on the Worldmap panel? In the previous post we looked at using the Worldmap panel with the pre-set countries and US states. If you wanted locations beyond that you can provide them via a single JSON endpoint, however there is also a way to have the location come [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using the Worldmap Panel with Prometheus</title>
+		<link>/using-the-worldmap-panel-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 02 Apr 2018 08:19:08 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grafana]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3799</guid>
+
+					<description><![CDATA[The Worldmap Panel for Grafana allows displaying of metrics on a map. Grafana has many plugins, the one I'm going to look at today is the Worldmap Panel. First off install it in your Grafana if you don't have it already: grafana-cli plugins install grafana-worldmap-panel and then restart Grafana to pick it up. Let's say [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Monitoring Kafka with Prometheus</title>
+		<link>/monitoring-kafka-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 24 Oct 2016 07:47:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grafana]]></category>
+		<category><![CDATA[jmx exporter]]></category>
+		<category><![CDATA[kafka]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2286</guid>
+
+					<description><![CDATA[We've previously looked at how to monitor Cassandra with Prometheus. Let's see the process for getting metrics from another popular Java application, Kafka. Similar to what we did for Cassandra, we download Kafka, the JMX exporter and the config file: wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/kafka/1.0.0/kafka_2.11-1.0.0.tgz tar -xzf kafka_*.tgz cd kafka_* wget https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.6/jmx_prometheus_javaagent-0.6.jar wget https://raw.githubusercontent.com/prometheus/jmx_exporter/master/example_configs/kafka-0-8-2.yml We start a Zookeeper (a Kafka dependency) [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Setting up Grafana for Prometheus</title>
+		<link>/setting-up-grafana-for-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Sun, 01 Nov 2015 13:29:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dashboards]]></category>
+		<category><![CDATA[grafana]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1043</guid>
+
+					<description><![CDATA[Grafana recently added support for Prometheus. Let's take a look at how to get it up and running. First let's setup a quick Prometheus server to scrape itself so we have some metrics to play with: wget https://github.com/prometheus/prometheus/releases/download/v2.0.0/prometheus-2.0.0.linux-amd64.tar.gz tar -xzf prometheus-2.0.0.linux-amd64.tar.gz cd prometheus-* cat &#60;&#60;'EOF' &#62; prometheus.yml global: scrape_interval: 10s evaluation_interval: 10s scrape_configs: - job_name: [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

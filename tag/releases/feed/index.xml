@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>releases &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/releases/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 30 Nov 2020 10:25:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>releases &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>New Features in Prometheus 2.23.0</title>
+		<link>/new-features-in-prometheus-2-23-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 30 Nov 2020 10:25:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5833</guid>
+
+					<description><![CDATA[Prometheus 2.23.0 is now out, following on from 2.22.0 with many fixes and improvements. There's been a variety of performance improvements to the TSDB. Compaction will now be faster, there will only be one checkpoint made after Prometheus restarts after not running for a good while, and the series API no longer loads any chunks. Remote write can now [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 2.22.0</title>
+		<link>/new-features-in-prometheus-2-22-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2020 08:22:25 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5736</guid>
+
+					<description><![CDATA[Prometheus 2.22.0 is now out, following on from 2.21.0 with many fixes and improvements. There are two new metrics, rule_group_last_evaluation_samples will help you track expensive rule groups and prometheus_tsdb_data_replay_duration_seconds will provide the how long the WAL replay took at startup. The deprecated v2 API has been removed, as this was mainly gRPC based and causing maintenance problems. In the [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 2.21.0</title>
+		<link>/new-features-in-prometheus-2-21-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2020 08:29:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5643</guid>
+
+					<description><![CDATA[Prometheus 2.21.0 is now out, following on from 2.20.0 with many fixes and improvements. You can now use durations like 1m30s in PromQL, config files, and command line flags. target_limit is a new emergency relief valve, should a scrape config have more targets than this then their scrapes will fail. There's two new service discoveries, Eureka and Hetzner. Kubernetes [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 2.20.0</title>
+		<link>/new-features-in-prometheus-2-20-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2020 09:11:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5536</guid>
+
+					<description><![CDATA[Prometheus 2.20.0 is now out, following on from 2.19.0 with many fixes and improvements. WAL compression mentioned briefly in previous post is now enabled by default, some saving disk space and iops for a small CPU cost. There's also been performance improvements to regex matchers. PromQL gained a group() aggregator, which can be used to make certain queries more [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 2.19.0</title>
+		<link>/new-features-in-prometheus-2-19-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 15 Jun 2020 09:43:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5439</guid>
+
+					<description><![CDATA[Prometheus 2.19.0 is now out, following on from 2.18.0 with many fixes and improvements. The big new feature if that full chunks in the TSDB head block are now stored in mmaped, rather than on the heap. This reduces memory requirements particularly for higher frequency scraping, and allows for faster restarts. There's also been improvements in isolation performance. Triton [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 2.18.0</title>
+		<link>/new-features-in-prometheus-2-18-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 11 May 2020 08:32:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5305</guid>
+
+					<description><![CDATA[Prometheus 2.18.0 is now out, following on from 2.17.0 with many fixes and improvements. This is a fairly light release. The most notable change is that the amount of WAL kept on disk has been halved from 6 to 3 hours, which came out of my research for a previous blog post. Federation now only queries the local TSDB, [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 2.17.0</title>
+		<link>/new-features-in-prometheus-2-17-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 30 Mar 2020 08:12:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5217</guid>
+
+					<description><![CDATA[Prometheus 2.17.0 is now out, following on from 2.16.0 with many fixes and improvements. The big change in this release is that isolation has been added to the tsdb. This means that queries will no longer see partial scrapes, avoiding a number of race conditions such as with histograms. This does use a bit more memory and CPU, but [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 2.16.0</title>
+		<link>/new-features-in-prometheus-2-16-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 17 Feb 2020 08:24:27 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5133</guid>
+
+					<description><![CDATA[Prometheus 2.16.0 is now out, following on from 2.15.0 with many fixes and improvements. There's more performance improvements in this release. If you have queries that only touch the head (most recent hour-ish of data), they will be faster as I've removed some some unnecessary sorting. In practice this should make recording rules (which should generally only be working [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 2.14.0</title>
+		<link>/new-features-in-prometheus-2-14-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 11 Nov 2019 17:51:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4752</guid>
+
+					<description><![CDATA[Prometheus 2.14.0 is now out, following on from 2.13.0 with many fixes and improvements. The big new feature is the new UI based on React, which is still a work in progress and largely looks the same as the existing UI. The existing UI also gained  head cardinality statistics and alert filtering by state. Remote write delays after compaction [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Features in Prometheus 2.13.0</title>
+		<link>/new-features-in-prometheus-2-13-0</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 07 Oct 2019 10:40:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[releases]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4677</guid>
+
+					<description><![CDATA[Prometheus 2.13.0 is now out, following on from 2.12.0 with many fixes and improvements. This release is fairly small again. The tsdb utility has been included in this release, however note that it'll likely be subsumed into promtool by 2.14.0. The prometheus_sd_configs_failed_total counter has been replaced by the prometheus_sd_failed_configs gauge. There have been performance improvements to remote read and [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

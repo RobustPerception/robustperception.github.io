@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>estimation &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/estimation/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Wed, 18 Nov 2015 01:21:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>estimation &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Unlimited costs, Limited revenue</title>
+		<link>/unlimited-costs-limited-revenue</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 04 Nov 2015 19:31:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[abuse]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[estimation]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1081</guid>
+
+					<description><![CDATA[This week Microsoft removed unlimited storage from their OneDrive offering, because surprise surprise people were using it as unlimited storage. Does your product have features that cost you time and money, without your users paying accordingly? When starting out and trying to gain traction, it's normal to add lots of features to draw in more users. Maybe [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Monitoring: Not Just For Outages</title>
+		<link>/monitoring-not-just-for-outages</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2015 18:44:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[estimation]]></category>
+		<category><![CDATA[inclusive monitoring]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=793</guid>
+
+					<description><![CDATA[It's common to think of monitoring as something just to alert you when things are going wrong.  At Robust Perception we believe in Inclusive Monitoring, where all aspects of systems are monitored and available to provide insight and drive decisions. Monitoring means different things to different people; from manually looking at log files, to alerting on [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Do you know your peak-to-mean ratio?</title>
+		<link>/do-you-know-your-peak-to-mean-ratio</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2015 13:51:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[capacity]]></category>
+		<category><![CDATA[estimation]]></category>
+		<category><![CDATA[provisioning]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=824</guid>
+
+					<description><![CDATA[Traffic from users to your servers isn't a steady stream, it waxes and wanes over the day and week. The peak-to-mean ratio is your primary tool to avoid outages or unnecessary costs due to this. Users aren't constantly glued to their screens, they have to go to work, go home and go to sleep. Users for most applications [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>There are 100,000 Seconds in a Day</title>
+		<link>/there-are-100000-seconds-in-a-day</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Sun, 23 Aug 2015 21:08:47 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[estimation]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=659</guid>
+
+					<description><![CDATA[Just after you've launched is not the best time to find out that you can't handle the load you predicted, or that running costs are much higher than you'd like. By estimating the operational parameters of your system as you design you can gain confidence that the system will work as you expect. When building your product, there's [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

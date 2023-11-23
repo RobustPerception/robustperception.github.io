@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cassandra &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/cassandra/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Fri, 02 Mar 2018 12:19:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>cassandra &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Monitoring Cassandra with Prometheus</title>
+		<link>/monitoring-cassandra-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Thu, 22 Oct 2015 11:43:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cassandra]]></category>
+		<category><![CDATA[jmx exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=984</guid>
+
+					<description><![CDATA[Cassandra is one of many Java-based systems that offers metrics via JMX. The JMX Exporter offers way to use these with Prometheus. By following these steps you can be up and running in under a minute! We'll start from scratch, first we download and extract the latest Cassandra tarball: wget http://archive.apache.org/dist/cassandra/2.2.4/apache-cassandra-2.2.4-bin.tar.gz tar -xzf apache-cassandra-*-bin.tar.gz cd apache-cassandra-* [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

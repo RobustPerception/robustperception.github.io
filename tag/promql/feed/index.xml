@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>promql &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/promql/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Tue, 29 Dec 2020 12:15:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>promql &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Prefer without and ignoring</title>
+		<link>/prefer-without-and-ignoring</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2020 09:40:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5860</guid>
+
+					<description><![CDATA[Which of by/without and on/ignoring should you use? When writing a given bit of PromQL you know what labels you want in the output of an aggregation, so why not put them in the by ? Similarly when doing vector matching and using on. So why ever use without and ignoring? Application architectures and deployment [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Negative lookahead assertions in PromQL selectors</title>
+		<link>/negative-lookahead-assertions-in-promql-selectors</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 12 Oct 2020 08:40:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[regex]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5723</guid>
+
+					<description><![CDATA[RE2 doesn't support lookahead, but that doesn't mean you can't do it in another way. Negative lookahead assertions are a feature of Perl Compatible Regular Expressions that says don't match if the following thing matches, without consuming any of the text. This is commonly used to provide an exception to a regex.  For example (?!bar)b.. [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using the group() aggregator in PromQL</title>
+		<link>/using-the-group-aggregator-in-promql</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 10 Aug 2020 09:49:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5545</guid>
+
+					<description><![CDATA[Prometheus 2.20 added a group aggregator. What is it for? If you wanted to count the number of unique values a label has, such as say the number of values the cpu label had in node_cpu_seconds_total per instance the standard pattern is: count without(cpu) ( count without(mode) (node_cpu_seconds_total) ) That is first you aggregate away any [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Time metric from the node exporter</title>
+		<link>/time-metric-from-the-node-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 13 Jul 2020 09:40:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5483</guid>
+
+					<description><![CDATA[The node exporter exposes the current machine time. The time module is even simpler than conntrack, exposing only a single metric: # HELP node_time_seconds System time in seconds since epoch (1970). # TYPE node_time_seconds gauge node_time_seconds 1.5935998188567045e+09 On its own this may not seem of much use, as Prometheus already has the time() function to [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Why info-style metrics have a value of 1</title>
+		<link>/why-info-style-metrics-have-a-value-of-1</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 23 Mar 2020 11:24:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5222</guid>
+
+					<description><![CDATA[You've seen metrics like prometheus_build_info, but why do they have a value of 1? Since the machine roles post came out all the way back in 2015, this has become a standard pattern within the Prometheus ecosystem. Such metrics these days are known as info metrics and usually have an _info suffix. Something that has [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Regex Selectors are a Smell</title>
+		<link>/regex-selectors-are-a-smell</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 24 Feb 2020 09:45:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5170</guid>
+
+					<description><![CDATA[Have you ever found yourself having to keep on updating and tweaking certain regexes in PromQL? A smell doesn't automatically mean that something is bad. A smell is a sign however that you might want to take a closer look, that there might be a better way to do things. Let's say you saw a [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Get thee to a NaNnary</title>
+		<link>/get-thee-to-a-nannary</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 03 Feb 2020 08:46:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5072</guid>
+
+					<description><![CDATA[NaN is just a number in Prometheus. Some monitoring systems use NaN as a null or missing value, however in Prometheus NaN is just another floating point value. The way Prometheus represents missing data is to have the data, uhm, missing. Prometheus supports all 64-bit floating point values, including positive infinity, negative infinity, and NaN. [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Graphite&#8217;s summarize and smartSummarize in PromQL</title>
+		<link>/graphites-summarize-and-smartsummarize-in-promql</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 20 Jan 2020 10:59:37 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[graphite]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5017</guid>
+
+					<description><![CDATA[How do you convert summarizeinto PromQL? Graphite's summarize function buckets data for individual series based on time. The equivalent functionality in PromQL is provided by the various _over_time functions. In addition when converting we need to allow for the different the execution models of PromQL and Graphite. Graphite works on producing a whole graph at [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Left joins in PromQL</title>
+		<link>/left-joins-in-promql</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 30 Dec 2019 09:05:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4970</guid>
+
+					<description><![CDATA[Just because SQL isn't in the name doesn't mean that you can't do SQL-like joins with PromQL. PromQL doesn't have a feature called "joins", however does have "vector matching" which is a similar idea. Aside from the syntactic differences, there's also a somewhat different set of semantics in play. &#160; To start out let's talk [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>PromQL Subqueries and Alignment</title>
+		<link>/promql-subqueries-and-alignment</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 09 Dec 2019 09:53:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4831</guid>
+
+					<description><![CDATA[Subqueries were added to PromQL a while back, but there's more to this feature than it'd seem. For the longest time subqueries had fundamental issues that made them challenging to add. Firstly from a semantic standpoint what interval should they be executed on? The ultimate answer was to use the global evaluation interval as a [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

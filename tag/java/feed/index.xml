@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>java &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/java/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 20 Apr 2020 10:03:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>java &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Measuring Java garbage collection with Prometheus</title>
+		<link>/measuring-java-garbage-collection-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 04 Mar 2019 09:50:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4295</guid>
+
+					<description><![CDATA[GC stats are one of the many metrics that the Java/JVM client library exposes. Assuming that DefaultExports.initialize(); has been invoked, the Java client will expose a number of JVM metrics out of the box including memory pools, memory allocations, buffer pools, threads, JVM version, loaded classes, and of course garbage collection. The GC information comes from GarbageCollectorMXBean, [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using the Java client with Gradle</title>
+		<link>/using-the-java-client-with-gradle</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 20 Aug 2018 07:22:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gradle]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4005</guid>
+
+					<description><![CDATA[While the Java client library uses pom.xml and Maven, there's nothing stopping you from using other tools such as Gradle The example dependencies for the Java client are for Maven, if you have an existing Gradle project​ the equivalents will look something like: dependencies { compile group: 'io.prometheus', name: 'simpleclient', version: '0.5.0' compile group: 'io.prometheus', name: [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Existential issues with metrics</title>
+		<link>/existential-issues-with-metrics</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 24 Jul 2017 08:08:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3066</guid>
+
+					<description><![CDATA[The Prometheus instrumentation best practices say to "Avoid missing metrics". Let's look at why, and how to deal with it. Prometheus is a metric-based time series monitoring system. A key aspect of this style of monitoring is that time series have a continuous existence over a period of time, and that scrapes are a snapshot of [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How to unit test Prometheus instrumentation</title>
+		<link>/how-to-unit-test-prometheus-instrumentation</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 10 Jul 2017 08:37:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[testing]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2988</guid>
+
+					<description><![CDATA[If you've determined a metric should be tested, how do you go about that? While you shouldn't automatically test metrics, Prometheus client libraries offer facilities to make it as easy as possible to do so. &#160; Taking Python as an example, let's say we had a counter that we wanted to check was incremented: from [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Exposing Dropwizard metrics to Prometheus</title>
+		<link>/exposing-dropwizard-metrics-to-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 26 Jun 2017 10:05:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dropwizard]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2916</guid>
+
+					<description><![CDATA[If you've an existing instrumentation library in use, it's not always practical to immediately switch to a Prometheus instrumentation library. There are a multitude of integrations available to aid your transition. &#160; Dropwizard metrics is a popular instrumentation library for the JVM. While it lacks labels and tends to do calculations in the client rather [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Label Lookups and the Child</title>
+		<link>/label-lookups-and-the-child</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 27 Feb 2017 10:59:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[client libraries]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2547</guid>
+
+					<description><![CDATA[The Prometheus client library guidelines recommend having a Child be returned via labels(). Why? A common misstep made by those implementing client libraries for Prometheus is to have usage for labels looking something like: MY_COUNTER = prometheus_client.Counter('my_counter_total', 'help', ['labelname']) MY_COUNTER.inc(['labelvalue'], 2.0) # Don't do this. Whereas the correct pattern looks something like: MY_COUNTER = prometheus_client.Counter('my_counter_total', 'help', ['labelname']) MY_COUNTER.labels('labelvalue').inc(2.0) Why [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Memory usage of Prometheus client libraries</title>
+		<link>/memory-usage-of-prometheus-client-libraries</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 02 Jan 2017 08:32:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2445</guid>
+
+					<description><![CDATA[A common question around Prometheus client libraries is how much RAM they'll use on a busy process. There tends to be disbelief when we say it's the same as an inactive server. Let's look deeper. &#160; The simplest way to test this is a small benchmark: from prometheus_client import Counter import resource print("Before creating counters: ", resource.getrusage(0).ru_maxrss) [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Exporting to Graphite with the Prometheus Java Client</title>
+		<link>/exporting-to-graphite-with-the-prometheus-java-client</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Thu, 28 Jan 2016 20:15:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[graphite]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[maven]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1507</guid>
+
+					<description><![CDATA[I previously looked at how the Prometheus Python client can output to Graphite. You can do the same with the Java client, letting you instrument once and integrate with non-Prometheus monitoring systems. If you're using Maven, the key dependency you need is simpleclient_graphite_bridge: &#60;dependency&#62; &#60;groupId&#62;io.prometheus&#60;/groupId&#62; &#60;artifactId&#62;simpleclient_graphite_bridge&#60;/artifactId&#62; &#60;version&#62;0.0.13&#60;/version&#62; &#60;/dependency&#62; Sending samples out to Graphite is then only a few lines [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Instrumenting Java with Prometheus</title>
+		<link>/instrumenting-java-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Tue, 05 Jan 2016 19:06:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[maven]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1450</guid>
+
+					<description><![CDATA[Getting started with a new library it helps to have an example to work from. Let's look at a simple example of using Prometheus instrumentation in Java. &#160; I've written a small example webserver. Let's download it and run it: git clone https://github.com/RobustPerception/java_examples.git cd java_examples/java_simple/ mvn package java -jar target/java_simple-1.0-SNAPSHOT-jar-with-dependencies.jar If you visit :1234/ you'll [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Viewing Logs for the JMX Exporter</title>
+		<link>/viewing-logs-for-the-jmx-exporter</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Wed, 19 Aug 2015 17:20:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[debugging]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[jmx exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=757</guid>
+
+					<description><![CDATA[Sometimes mBeans produce errors when scraped by the JMX exporter. Being able to look at detailed logs can help you figure out exactly which mBean is having issues and why. Create a file called logging.properties with this content: handlers=java.util.logging.ConsoleHandler java.util.logging.ConsoleHandler.level=ALL io.prometheus.jmx.level=ALL io.prometheus.jmx.shaded.io.prometheus.jmx.level=ALL Add the following flag to your Java invocation: -Djava.util.logging.config.file=/path/to/logging.properties If you run your [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

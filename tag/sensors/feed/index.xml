@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sensors &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/sensors/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Wed, 15 Jun 2016 19:12:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>sensors &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Quick Sensor Metrics with the Textfile Collector</title>
+		<link>/quick-sensor-metrics-with-the-textfile-collector</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Sat, 08 Aug 2015 12:56:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[sensors]]></category>
+		<category><![CDATA[textfile collector]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=645</guid>
+
+					<description><![CDATA[Sometimes you need a machine metric that's not exported yet by the node exporter. The textfile collector can be used to quickly get such metrics graphed in Prometheus. &#160; One of my computers was randomly getting turned off. Looking through the logs wasn't fruitful, and as it has always run a bit hot I suspected [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

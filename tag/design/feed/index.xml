@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>design &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/design/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Wed, 01 Apr 2020 10:51:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>design &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Why info-style metrics have a value of 1</title>
+		<link>/why-info-style-metrics-have-a-value-of-1</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 23 Mar 2020 11:24:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5222</guid>
+
+					<description><![CDATA[You've seen metrics like prometheus_build_info, but why do they have a value of 1? Since the machine roles post came out all the way back in 2015, this has become a standard pattern within the Prometheus ecosystem. Such metrics these days are known as info metrics and usually have an _info suffix. Something that has [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Optimising index memory usage for blocks</title>
+		<link>/optimising-index-memory-usage-for-blocks</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 13 Jan 2020 09:36:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4998</guid>
+
+					<description><![CDATA[One of the big changes in Prometheus 2.15.0 was reduced memory usage for indexes. To understand the improvements, we first need to talk about how block indexes work and particularly what data structures are kept in memory. If you look at the docs you'll see the index consists of: A Symbol Table Series, including their [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>PromQL Subqueries and Alignment</title>
+		<link>/promql-subqueries-and-alignment</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 09 Dec 2019 09:53:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4831</guid>
+
+					<description><![CDATA[Subqueries were added to PromQL a while back, but there's more to this feature than it'd seem. For the longest time subqueries had fundamental issues that made them challenging to add. Firstly from a semantic standpoint what interval should they be executed on? The ultimate answer was to use the global evaluation interval as a [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Looking beyond retention</title>
+		<link>/looking-beyond-retention</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2019 08:07:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[reliability]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4608</guid>
+
+					<description><![CDATA[How can you view older data, while keeping your monitoring reliable? Prometheus is designed around the notion of reliability of monitoring, it only needs local disk and network access to work. There's no complex clustering or distributed systems, even federation is designed with the idea that it's a normal scrape so it's easy to reason [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Putting queues in front of Prometheus for reliability</title>
+		<link>/putting-queues-in-front-of-prometheus-for-reliability</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 05 Aug 2019 09:46:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[push]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4554</guid>
+
+					<description><![CDATA[On a regular basis a potential Prometheus user says they need a different architecture to make things reliable or scalable. Let's look at that. Once or twice a month I see someone propose a Prometheus architecture that looks something like this: Applications push metrics to some form of queue (usually Kafka), an exposer binary reads [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Why can&#8217;t I use the nodename of a machine as the instance label?</title>
+		<link>/why-cant-i-use-the-nodename-of-a-machine-as-the-instance-label</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 01 Jul 2019 08:43:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[service discovery]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4484</guid>
+
+					<description><![CDATA[The machine knows its own name, couldn't Prometheus use it? This is a not uncommon question about Prometheus and service discovery. If you run uname -n you'll see a machine's nodename, and this is something that'd be useful to have as part of your instance label. The node exporter even exposes it as the nodename [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Staleness and PromQL</title>
+		<link>/staleness-and-promql</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 01 Apr 2019 08:23:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4340</guid>
+
+					<description><![CDATA[How should a monitoring system deal with metrics no longer being there? One of the advantages of pull-based monitoring is that you can tell when a scrape fails, as against some data not appearing for what could be a number of reasons. Even with that information, how should it be exposed semantically to PromQL? PromQL [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Why predeclare metrics?</title>
+		<link>/why-predeclare-metrics</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 13 Aug 2018 06:31:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3999</guid>
+
+					<description><![CDATA[The standard way to use metrics in Prometheus is to declare them at file level, before using them. Why? If you look at a typical use of direct instrumentation with Prometheus, it will look something like: REQUESTS = Counter('my_requests_total', 'Requests made') def some_function():   REQUESTS.inc() And not: def some_function():   prometheus.inc("my_requests_total") Why is the former [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Why not send graphs with alerts?</title>
+		<link>/why-not-send-graphs-with-alerts</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 26 Mar 2018 09:02:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3779</guid>
+
+					<description><![CDATA[You may have noticed that notifications from the Alertmanager are text. Wouldn't it be nice if Prometheus sent graphs along? One of the key features of Prometheus is labels. You can have a single alerting rule in one Prometheus that sends an alert for each of your thousands of machines distinguished by their labels. On [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Why are Prometheus histograms cumulative?</title>
+		<link>/why-are-prometheus-histograms-cumulative</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 11 Dec 2017 09:21:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3541</guid>
+
+					<description><![CDATA[Have you ever wondered why the buckets in histograms are not just counters of events that fall into each bucket? Let us say that you have a histogram with the default buckets recording latency, and had observed events of size 0.04s, 0.2s, 0.3s, 1s and 5s. The text format output would look like: # HELP [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

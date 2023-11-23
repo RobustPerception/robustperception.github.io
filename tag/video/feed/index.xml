@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>video &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/video/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Wed, 08 Nov 2017 15:33:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>video &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Audio Alerting with Prometheus</title>
+		<link>/audio-alerting-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Sep 2015 13:38:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alerting]]></category>
+		<category><![CDATA[alertmanager]]></category>
+		<category><![CDATA[blackbox_exporter]]></category>
+		<category><![CDATA[generic webhook]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[video]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=844</guid>
+
+					<description><![CDATA[Prometheus offers integrations with systems like PagerDuty, Email and Hipchat for alert notifications - but what if you want do something that's not supported out of the box? The Alertmanager's generic web hook has got you covered. I'd like to be told when my internet connections go down, rather than finding out the hard way. [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

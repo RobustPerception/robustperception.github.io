@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nginx &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/nginx/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 02 Jul 2018 08:03:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>nginx &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>External URLs and path prefixes</title>
+		<link>/external-urls-and-path-prefixes</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 02 Jul 2018 08:03:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alertmanager]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3883</guid>
+
+					<description><![CDATA[In a previous post I looked at setting the external URL. What if the reverse proxy is sending a different path than the user is using? By default Prometheus (and Alertmanager) presumes that any path in the external URL is a prefix path that'll be in all requests that are sent to it. However that's [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using external URLs and proxies with Prometheus</title>
+		<link>/using-external-urls-and-proxies-with-prometheus</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 25 Jun 2018 08:05:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alertmanager]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=3877</guid>
+
+					<description><![CDATA[Sometimes users will not access Prometheus's UI directly, instead using another URL. How do you make this work? The Prometheus web UI, such as the expression browser, depends on it being accessed on the same URL on which Prometheus itself is listening. This is as Prometheus needs to know where assets such as Javascript are [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Adding Basic Auth to Prometheus with Nginx</title>
+		<link>/adding-basic-auth-to-prometheus-with-nginx</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Tue, 11 Aug 2015 15:58:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[auth]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">http://aveclabs.com/?p=580</guid>
+
+					<description><![CDATA[Prometheus doesn't provide authentication support in order to focus energy on making an awesome monitoring tool. Instead users can take advantage of a more purpose designed tool such as Nginx to do so. This post will look at how you can do that. To start you should install Nginx. Next let's get a basic Ngingx [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

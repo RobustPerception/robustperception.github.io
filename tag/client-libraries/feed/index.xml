@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>client libraries &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/client-libraries/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Thu, 21 Jan 2021 09:08:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>client libraries &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How does a Prometheus Histogram work?</title>
+		<link>/how-does-a-prometheus-histogram-work</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 30 Sep 2019 09:06:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[client libraries]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4634</guid>
+
+					<description><![CDATA[We looked previously at the counter, gauge, and summary, how does the Prometheus histogram work? The histogram has several similarities to the summary. A histogram is a combination of various counters. Like summary metrics, histogram metrics are used to track the size of events, usually how long they take, via their observe method. There's usually also [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How does a Prometheus Summary work?</title>
+		<link>/how-does-a-prometheus-summary-work</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 25 Mar 2019 10:22:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[client libraries]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4328</guid>
+
+					<description><![CDATA[We looked previously at the counter and gauge, how does the Prometheus summary work? A summary is a combination of other types, to make common patterns simpler to use. A summary consists of two counters, and optionally some gauges. Summary metrics are used to track the size of events, usually how long they take, via their observe [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Label Lookups and the Child</title>
+		<link>/label-lookups-and-the-child</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 27 Feb 2017 10:59:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[client libraries]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2547</guid>
+
+					<description><![CDATA[The Prometheus client library guidelines recommend having a Child be returned via labels(). Why? A common misstep made by those implementing client libraries for Prometheus is to have usage for labels looking something like: MY_COUNTER = prometheus_client.Counter('my_counter_total', 'help', ['labelname']) MY_COUNTER.inc(['labelvalue'], 2.0) # Don't do this. Whereas the correct pattern looks something like: MY_COUNTER = prometheus_client.Counter('my_counter_total', 'help', ['labelname']) MY_COUNTER.labels('labelvalue').inc(2.0) Why [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How does a Prometheus Gauge work?</title>
+		<link>/how-does-a-prometheus-gauge-work</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 26 Dec 2016 10:13:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[client libraries]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=2393</guid>
+
+					<description><![CDATA[We looked previously at the counter, how does the Prometheus gauge work? The Prometheus gauge is essentially the same simple idea as gauges in other monitoring systems. Gauges can go up and down over time, and scrapes take a snapshot of the current value. There's no potential for messing around with moving averages or resets, [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How does a Prometheus Counter work?</title>
+		<link>/how-does-a-prometheus-counter-work</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Fri, 08 Apr 2016 16:43:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[client libraries]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">http://www.robustperception.io/?p=1653</guid>
+
+					<description><![CDATA[There are four standard types of metric in Prometheus instrumentation: Gauge, Counter, Summary and Histogram. Today we'll have a look at the principles around Counters, and how Prometheus differs from other monitoring systems. &#160; A counter counts things. Sounds simple, right? That's not much use on its own though. What you really want to know [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

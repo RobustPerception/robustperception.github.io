@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html data-semplice="4.2.2">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<title>Evaluating Performance and Correctness &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.9.3" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="ppress-frontend-css" href="/wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css?ver=3.1.19" type="text/css" media="all">
+<link rel="stylesheet" id="ppress-flatpickr-css" href="/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css?ver=3.1.19" type="text/css" media="all">
+<link rel="stylesheet" id="ppress-select2-css" href="/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=5.9.3" type="text/css" media="all">
+<link rel="stylesheet" id="semplice-stylesheet-css" href="/wp-content/themes/semplice4/style.css?ver=4.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="semplice-frontend-stylesheet-css" href="/wp-content/themes/semplice4/assets/css/frontend.min.css?ver=4.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="mediaelement-css" href="/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=5.9.3" id="ppress-flatpickr-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=5.9.3" id="ppress-select2-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/4756">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.9.3">
+<link rel="canonical" href="/evaluating-performance-and-correctness">
+<link rel="shortlink" href="/?p=4756">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fevaluating-performance-and-correctness">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fevaluating-performance-and-correctness&#038;format=xml">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<style type="text/css" id="semplice-webfonts-css">.font_21cb0s4ud, [data-font="font_21cb0s4ud"], [data-font="font_21cb0s4ud"] li a, #content-holder p, #content-holder li {font-family: "inconsolata", sans-serif;font-weight: 400;font-style: normal;}.font_7g535ae2g, [data-font="font_7g535ae2g"], [data-font="font_7g535ae2g"] li a, #content-holder h1, #content-holder h2, #content-holder h3, #content-holder h4, #content-holder h5, #content-holder h6 {font-family: "inconsolata-bold", sans-serif;font-weight: 800;font-style: normal;}</style>
+		<style type="text/css" id="semplice-custom-css">.container {
+			max-width: 1230px;
+		}
+			@media screen and (min-width: 992px) and (max-width: 1169px) { #content-holder h1 { font-size: 2.15rem; line-height: 2.76rem; }#content-holder h2 { font-size: 1.84rem; line-height: 2.45rem; }#content-holder h3 { font-size: 1.49rem; line-height: 1.92rem; }#content-holder h4 { font-size: 1.28rem; line-height: 1.92rem; }#content-holder h5 { font-size: 1.11rem; line-height: 1.78rem; }#content-holder h6 { font-size: 1rem; line-height: 1.67rem; }}@media screen and (min-width: 768px) and (max-width: 991px) { #content-holder h1 { font-size: 2.01rem; line-height: 2.58rem; }#content-holder h2 { font-size: 1.76rem; line-height: 2.35rem; }#content-holder h3 { font-size: 1.43rem; line-height: 1.84rem; }#content-holder h4 { font-size: 1.23rem; line-height: 1.84rem; }#content-holder h5 { font-size: 1.11rem; line-height: 1.78rem; }#content-holder h6 { font-size: 1rem; line-height: 1.67rem; }}@media screen and (min-width: 544px) and (max-width: 767px) { #content-holder h1 { font-size: 1.91rem; line-height: 2.46rem; }#content-holder h2 { font-size: 1.68rem; line-height: 2.24rem; }#content-holder h3 { font-size: 1.4rem; line-height: 1.8rem; }#content-holder h4 { font-size: 1.2rem; line-height: 1.8rem; }#content-holder h5 { font-size: 1.11rem; line-height: 1.78rem; }#content-holder h6 { font-size: 1rem; line-height: 1.67rem; }}@media screen and (max-width: 543px) { #content-holder h1 { font-size: 1.82rem; line-height: 2.34rem; }#content-holder h2 { font-size: 1.6rem; line-height: 2.13rem; }#content-holder h3 { font-size: 1.37rem; line-height: 1.76rem; }#content-holder h4 { font-size: 1.17rem; line-height: 1.76rem; }#content-holder h5 { font-size: 1.11rem; line-height: 1.78rem; }#content-holder h6 { font-size: 1rem; line-height: 1.67rem; }}
+			#comments {
+  display: none !important;
+}
+
+pre, code {
+  background: #31302F;
+  color: white;
+}
+
+code {
+  white-space: nowrap;
+}
+
+.posts table td, .posts table th {
+  line-height: inherit;
+}
+
+.post table {
+  display: block;
+  overflow: auto;
+}
+
+.is-frontend div.posts {
+    padding-top: 1rem;
+}
+
+
+.post-divider {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+			
+		.project-panel {
+			background: #f5f5f5;
+			padding: 2.5rem 0rem;
+		}
+		.pp-thumbs {
+			margin-bottom: -1.666666666666667rem;
+		}
+		#content-holder .panel-label, .projectpanel-preview .panel-label {
+			color: #000000;
+			font-size: 1.777777777777778rem;
+			text-transform: none;
+			padding-left: 0rem;
+			padding-bottom: 1.666666666666667rem;
+			text-align: left;
+			line-height: 1;
+		}
+		.project-panel .pp-title {
+			padding: 0.5555555555555556rem 0rem 1.666666666666667rem 0rem;
+		}
+		.project-panel .pp-title a {
+			color: #000000; 
+			font-size: 0.7222222222222222rem; 
+			text-transform: none;
+		} 
+		.project-panel .pp-title span {
+			color: #999999;
+			font-size: 0.7222222222222222rem;
+			text-transform: none;
+		}</style>
+	
+		<style type="text/css" id="4756-post-css">.post .row { justify-content: center; }
+					#comments form#commentform input, #comments form#commentform #submit, #comments form#commentform textarea,
+					#comments form#commentform input:hover, #comments form#commentform #submit:hover, #comments form#commentform textarea:hover,
+					#comments form#commentform input:focus, #comments form#commentform #submit:focus, #comments form#commentform textarea:focus {
+				}#content-4756 #section_64d57a94c {padding-top: 3.5555555555555554rem;padding-bottom: 3.5555555555555554rem;background-color: #262626;}#content-4756 #content_d0afa3066 {padding-top: 0rem;padding-bottom: 0rem;}#content-4756 #content_d0afa3066 .is-content {box-shadow: 0rem 0rem 0rem 0rem rgba(0,0,0,1);}#content-4756 #column_0c436d0cc {padding-top: 1.7777777777777777rem;padding-bottom: 1.7777777777777777rem;}
+			.nav_4ndms1087 { background-color: rgba(255, 255, 255, 1);; }.nav_4ndms1087 { height: 4.444444444444445rem; }.is-frontend #content-4756 .sections { margin-top: 4.444444444444445rem; }.nav_4ndms1087 { padding-top: 0rem; }.nav_4ndms1087 { padding-bottom: 0rem; }.nav_4ndms1087 .navbar-inner .logo { margin-top: 0rem; }.nav_4ndms1087 .logo img, .nav_4ndms1087 .logo svg { width: 14.222222222222221rem; }.nav_4ndms1087 .navbar-inner .logo { align-items: center; }.nav_4ndms1087 .navbar-inner .hamburger a.menu-icon span { background-color: #000000; }.nav_4ndms1087 .navbar-inner .hamburger a.menu-icon { width: 24; }.nav_4ndms1087 .navbar-inner .hamburger a.menu-icon span { height: 2px; }.nav_4ndms1087 .navbar-inner .hamburger a.open-menu span::before { transform: translateY(-6px); }.nav_4ndms1087 .navbar-inner .hamburger a.open-menu span::after { transform: translateY(6px); }.nav_4ndms1087 .navbar-inner .hamburger a.open-menu:hover span::before { transform: translateY(-8px); }.nav_4ndms1087 .navbar-inner .hamburger a.open-menu:hover span::after { transform: translateY(8px); }.nav_4ndms1087 .navbar-inner .hamburger a.menu-icon { height: 14px; }.nav_4ndms1087 .navbar-inner .hamburger a.menu-icon span { margin-top: 7px; }.nav_4ndms1087 .navbar-inner nav ul li a span { font-size: 1.0555555555555556rem; }.nav_4ndms1087 .navbar-inner nav ul li a span { color: #262626; }.nav_4ndms1087 .navbar-inner nav ul li a:hover span, .navbar-inner nav ul li.current-menu-item a span, .navbar-inner nav ul li.current_page_item a span { color: #0081a5; }.nav_4ndms1087 .navbar-inner nav ul li.current-menu-item a span { color: #0081a5; }.nav_4ndms1087 .navbar-inner nav ul li.current_page_item a span { color: #0081a5; }[data-post-type="project"] .navbar-inner nav ul li.portfolio-grid a span, [data-post-type="post"] .navbar-inner nav ul li.blog-overview a span { color: #0081a5; }#overlay-menu { background-color: rgba(245, 245, 245, 1); }#overlay-menu .overlay-menu-inner nav { text-align: center; }#overlay-menu .overlay-menu-inner nav ul li a { padding-top: 1.1111111111111rem; }#overlay-menu .overlay-menu-inner nav ul li a { padding-bottom: 1.1111111111111rem; }#overlay-menu .overlay-menu-inner nav ul li a span { letter-spacing: 0.022222222222222223rem; }@media screen and (min-width: 992px) and (max-width: 1169.9px) { .nav_4ndms1087 .navbar-inner .hamburger a.menu-icon { height: 14px; }.nav_4ndms1087 .navbar-inner .hamburger a.menu-icon span { margin-top: 7px; }}@media screen and (min-width: 768px) and (max-width: 991.9px) { .nav_4ndms1087 .navbar-inner .hamburger a.menu-icon { height: 14px; }.nav_4ndms1087 .navbar-inner .hamburger a.menu-icon span { margin-top: 7px; }}@media screen and (min-width: 544px) and (max-width: 767.9px) { .nav_4ndms1087 .navbar-inner .hamburger a.menu-icon { height: 14px; }.nav_4ndms1087 .navbar-inner .hamburger a.menu-icon span { margin-top: 7px; }}@media screen and (max-width: 543.9px) { .nav_4ndms1087 .logo img, .nav_4ndms1087 .logo svg { width: 13.555555555555555rem; }.nav_4ndms1087 .navbar-inner .hamburger a.menu-icon { height: 14px; }.nav_4ndms1087 .navbar-inner .hamburger a.menu-icon span { margin-top: 7px; }}</style>
+	<link rel="icon" href="/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2015/07/cropped-robust-icon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2015/07/cropped-robust-icon-180x180.png">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2015/07/cropped-robust-icon-270x270.png">
+		<style type="text/css" id="wp-custom-css">.grecaptcha-badge{
+visibility: collapse !important;
+}</style>
+				<style>html{margin-top:0px!important;}#wpadminbar{top:auto!important;bottom:0;}}</style>
+			</head>
+	<body class="post-template-default single single-post postid-4756 single-format-standard is-frontend static-mode mejs-semplice-ui" data-post-type="post">
+		<div id="content-holder" data-active-post="4756">
+			
+						<header class="nav_4ndms1087 semplice-navbar active-navbar non-sticky-nav  menu-type-text" data-cover-transparent="disabled" data-bg-overlay-visibility="visible" data-mobile-fallback="enabled">
+							<div class="container" data-nav="logo-left-menu-right">
+								<div class="navbar-inner menu-type-text" data-xl-width="12" data-navbar-type="container">
+									<div class="logo navbar-left"><a href="/" title="Robust Perception | Prometheus Monitoring Experts"><img src="/wp-content/uploads/2016/12/robust-perception-final_3.png" alt="logo"></a></div>
+									<nav class="standard navbar-right" data-font="font_7g535ae2g"><ul class="menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-3964"><a href="/blog"><span>Blog</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3965"><a href="https://robustperception.teachable.com/"><span>Training</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3977"><a target="_blank" rel="noopener" href="https://www.amazon.com/Prometheus-Infrastructure-Application-Performance-Monitoring-ebook/dp/B07FCV2VVG/"><span>Book</span></a></li>
+</ul></nav>
+									<div class="hamburger navbar-right semplice-menu"><a class="open-menu menu-icon"><span></span></a></div>
+								</div>
+							</div>
+						</header>
+						
+				<div id="overlay-menu">
+					<div class="overlay-menu-inner" data-xl-width="12">
+						<nav class="overlay-nav" data-justify="center" data-align="align-middle" data-font="font_7g535ae2g">
+							<ul class="container">
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-3964"><a href="/blog"><span>Blog</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3965"><a href="https://robustperception.teachable.com/"><span>Training</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3977"><a target="_blank" rel="noopener" href="https://www.amazon.com/Prometheus-Infrastructure-Application-Performance-Monitoring-ebook/dp/B07FCV2VVG/"><span>Book</span></a></li>
+</ul>
+						</nav>
+					</div>
+				</div>
+			
+					
+			<div id="content-4756" class="content-container active-content ">
+				<div class="sections">
+					<section class="content-block" data-column-mode-xs="single" data-column-mode-sm="single" style="padding-top: 3.5rem; padding-bottom: 3.5rem; background-color: rgb(125, 178, 207); margin-bottom: 3rem;">
+  <div class="is-content" style="height: 100%;" id="mce_0" spellcheck="false">
+    <h1 style="text-align: center;" data-mce-style="text-align: center;">
+      <span style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;">Reliable Insights</span>
+    </h1>
+    <p style="text-align: center;" data-mce-style="text-align: center;">
+      <span style="color: rgb(33, 33, 33);" data-mce-style="color: #212121;">A blog on monitoring, scale and operational Sanity</span>
+    </p>
+  </div>
+</section>
+<div class="posts">
+					<section class="post is-content post-4756 post type-post status-publish format-standard hentry category-posts tag-prometheus tag-promql tag-remote-write">
+						
+			<div class="container">
+				<div class="row">
+					<div class="column" data-xl-width="8" data-md-width="11" data-sm-width="12" data-xs-width="12">
+						<div class="post-heading">
+							<p><a href="/evaluating-performance-and-correctness">November 18, 2019</a><span></span></p>
+							<h2><a href="/evaluating-performance-and-correctness">Evaluating Performance and Correctness</a></h2>
+						</div>
+						<div class="post-content">
+							<p>There's more to selecting a piece of software than headline numbers.</p>
+<div id="more-4756"></div>
+<p>At PromCon there was a talk in which the speaker had found that <a href="https://github.com/VictoriaMetrics/VictoriaMetrics">VictoriaMetrics</a> had compression far beyond what other solutions like Thanos have, as in 3-4x. During the social event there were questions from some attendees as to whether there are optimisations that could be adopted by Prometheus or if this might be too good to be true, and what about other factors such as correctness and performance in reading the data back out.</p>
+<p>Based on this I did some quick ad-hoc testing on the Friday of PromCom and gave a lightning talk on it, the results of which were that the Prometheus server's compression (which both Cortex and Thanos use) is slightly better by about 10% than VictoriaMetrics and that in addition VictoriaMetrics was not storing all the information that Prometheus does.</p>
+<p>There's only so much testing you can do with 15 minutes setup time and lightning talks are only 5 minutes, so I wanted to take a deeper look into everything. The main developer of VictoriaMetrics also corresponded with me asking for more details (the videos aren't up yet at time of writing) plus a fuller write up, and suggested some adjustments to my test setup to make it a bit more realistic and I was also able to point him to the PromQL unittests so he could verify the correctness of their 3rd party PromQL implementation rather than waiting on bug reports to come in.</p>
+<p>This post will also give you an idea of the sort of things to look out for when evaluating any piece of software.</p>
+<p>&nbsp;</p>
+<p>So on to the testing. It's important that testing is as apples to apples as is possible. The test is primarily about compression, so I'll setup a Prometheus that's forwarding everything to VictoriaMetrics via remote write, all with default settings. I'm not going to look at RAM or CPU usage, as it's not a fair comparison. Cortex, Thanos's receiver, or M3DB would be what to compare against as they also hook in to remote write and there's others better placed to do such testing and compare things like replication, auto-rebalancing, tolerance to machine failure etc. across the systems.</p>
+<p>&nbsp;</p>
+<p>I also believe in providing enough detail about the setup to allow someone else to reproduce it themselves to verify. In this case I'll once again use the latest stable versions of each, which is now Prometheus 2.14.0 and VictoriaMetrics 1.29.3. It looks like VictoriaMetrics tunes itself based on RAM in the machine, so I'll mention that I've 32GB. Beyond that it's ZFS-on-Linux mirroring over two SSDs in the unlikely event that matters. I'm using my usual <a href="https://github.com/brian-brazil/benchmarks/blob/master/expose_many_metrics.go">expose_many_metrics</a> script scraped once a second, tweaked to have 9 digits after the decimal point on observe to simulate latency metrics more closely (as suggested, my previous test used a completely random float). Note that this setup has no churn. Prometheus is also scraping itself.</p>
+<p>Both systems have a snapshot feature, so that seems the fairest way to compare disk usage as fixed overhead like Prometheus's WAL should not be taken into account. We can take snapshots at the same time with:</p>
+<pre>curl -XPOST :9090/api/v1/admin/tsdb/snapshot &amp;
+curl :8428/snapshot/create
+wait</pre>
+<p>Due to the ways both systems do snapshots, a few uncommon options are needed to get <code>du</code> to do the right thing here:</p>
+<pre>$ du -hlLs prometheus-2.14.0.linux-amd64/data/snapshots/* victoria-metrics-data/snapshots/* 
+90M prometheus-2.14.0.linux-amd64/data/snapshots/20191115T130459Z-78629a0f5f3f164f 
+78M victoria-metrics-data/snapshots/20191115130459-15D7566ABFAD1118
+</pre>
+<p>That's after half an hour, so let's look at some other things I noticed in passing while we're waiting for that to build up into a more realistic amount of data where processes like compaction have had a chance to kick in.</p>
+<p>So let's try some queries to see if the data is the same in both systems, which we'd expect to be identical bar whatever tiny delay should be involved in ingesting data into VictoriaMetrics via remote write. Both systems support the query API, so we can do:</p>
+<pre>$ for i in 9090 8428; do curl -g ":$i/api/v1/query?query=prometheus_tsdb_blocks_loaded"; echo; done
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"prometheus_tsdb_blocks_loaded","instance":"localhost:9090","job":"prometheus"},
+  "value":[1573818712.325,"0"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"prometheus_tsdb_blocks_loaded","instance":"localhost:9090","job":"prometheus"},
+  "value":[1573818652,"0"]}]}}
+</pre>
+<p>The value is 0 in both cases, as you'd expect. The timestamps are a different though, beyond what could be explained by ingestion delay. The first thing to note is that Prometheus has a fractional part to the timestamp whereas VictoriaMetrics does not. This looks to be as there's no explicit time passed so the current time should be used, and Prometheus is using a millisecond resolution time whereas VictoriaMetrics is using seconds. If an explicit timestamp is sent it's fine, though the rounding is different if there's more precision than that. These are both small things, you couldn't tell the difference in Grafana as it'll send in integers for time.</p>
+<p>There's a bigger issue here though - the timestamps are different by a minute! Let's try with an explicit date and trimming down the output for sanity:</p>
+<pre>d=$(date +%s); echo $d; for i in 9090 8428; do curl -g ":$i/api/v1/query?query=prometheus_tsdb_blocks_loaded&amp;time=$d"; echo; done
+1573819392
+"value":[1573819392,"0"]
+"value":[1573819332,"0"]</pre>
+<p>This isn't any better, VictoriaMetrics is altering the query we're sending in. Let's try with <code>time()</code> so we're not depending on the database:</p>
+<pre>d=$(date +%s); echo $d; for i in 9090 8428; do curl -g ":$i/api/v1/query?query=time()&amp;time=$d"; echo; done
+1573819467
+{"resultType":"scalar","result":[1573819467,"1573819467"]}
+{"resultType":"vector","result":[{"metric":{},"value":[1573819407,"1573819407"]}]}</pre>
+<p>So the value has the wrong type for VictoriaMetrics (scalar vs instant vector), and is still off by a minute. This is not a correct output. Weirdly if I use an earlier time like 100 the correct value is returned. It looks like the discontinuity is for time values in the last minute, so queries for the last minute of data will return incorrect misleading results.</p>
+<p>Let's look more at the type mismatch:</p>
+<pre>$ for i in 9090 8428; do curl -g ":$i/api/v1/query?query=sum(time())"; echo; done
+{"status":"error","errorType":"bad_data","error":"invalid parameter 'query': parse error at char 12: expected type instant vector in aggregation expression, got scalar"}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{},"value":[1573819787,"1573819787"]}]}}</pre>
+<p>So VictoriaMetrics is returning a result where it should be producing a type error, as you can't aggregate a scalar. What does this mean for the usual <code>time() - timestamp</code> <a href="https://www.robustperception.io/monitoring-batch-jobs-in-python">pattern used for alerting</a>?</p>
+<pre>$ for i in 9090 8428; do curl -g ":$i/api/v1/query?query=time()-prometheus_tsdb_blocks_loaded"; echo; done
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"instance":"localhost:9090","job":"prometheus"},"value":[1573819930.391,"1573819930.391"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"instance":"localhost:9090","job":"prometheus"},"value":[1573819870,"1573819870"]}]}}</pre>
+<p>That's not right. A series with no labels should not match a series with labels, this is an explicit design decision in PromQL to keep the language consistent and predictable. More explicitly:</p>
+<pre>$ for i in 9090 8428; do curl -g ":$i/api/v1/query?query=vector(0)-prometheus_tsdb_blocks_loaded"; echo; done
+{"status":"success","data":{"resultType":"vector","result":[]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"instance":"localhost:9090","job":"prometheus"},"value":[1573819980,"0"]}]}}</pre>
+<p>So vector matching is broken in VictoriaMetrics when one side has an instant vector with one sample with no labels. Even the <code>scalar()</code> function doesn't return a scalar:</p>
+<pre>$ for i in 9090 8428; do curl -g ":$i/api/v1/query?query=scalar(vector(1))"; echo; done
+{"status":"success","data":{"resultType":"scalar","result":[1573820388.447,"1"]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{},"value":[1573820328,"1"]}]}}</pre>
+<p>&nbsp;</p>
+<p>So there's a few issues with the PromQL implementation of VictoriaMetrics, which our unittests will hopefully help them find and fix.</p>
+<p>&nbsp;</p>
+<p>Let's look at data storage, as for a apples to apples comparison we want to know that both databases contain the same data. Given that we know that VictoriaMetrics doesn't return correct data for the last minute via the query API, let's look a little further back:</p>
+<pre>$ d=$(date +%s -d'61 seconds ago'); for i in 9090 8428; do curl -g ":$i/api/v1/query?query=go_memstats_gc_cpu_fraction&amp;time=$d"; echo; done
+"value":[1573821987,"0.0008032872187757047"]}, "value":[1573821987,"0.0003083021835007435"]}]}}
+"value":[1573821987,"0.0008032872187757"]}, "value":[1573821987,"0.0003083021835007"]}]}</pre>
+<p>So for both of these time series we see that VictoriaMetrics is lossy. To be certain I have verified that this isn't just a floating point rendering issue, these are different numbers with <a href="https://play.golang.org/p/s4FuqmH4CeW">different bit representations</a>.</p>
+<p>&nbsp;</p>
+<p>Let's see about staleness handling. I briefly stopped the exposer:</p>
+<pre>$ d=1573822392; for i in 9090 8428; do curl -g ":$i/api/v1/query?query=up{job=\"expose\"}[5s]&amp;time=$d"; echo; done
+"values":[[1573822387.664,"1"],[1573822388.664,"0"],[1573822389.664,"0"],[1573822390.664,"0"],[1573822391.664,"1"]]}]}}
+"values":[[1573822387.664,"1"],[1573822388.664,"0"],[1573822389.664,"0"],[1573822390.664,"0"],[1573822391.664,"1"]]}]}}</pre>
+<p>And both have the data expected when queried for a range vector:</p>
+<pre>$ d=1573822392; for i in 9090 8428; do curl -g ":$i/api/v1/query?query=go_goroutines{job=\"expose\"}[5s]&amp;time=$d"; echo; done
+"values":[[1573822387.664,"6"],[1573822391.664,"6"]]}]}}
+"values":[[1573822387.664,"6"],[1573822391.664,"6"]]}]}}</pre>
+<p>So let's check this with a range query to see where the series disappears and reappears:</p>
+<pre>$ for i in 9090 8428; do curl -g ":$i/api/v1/query_range?query=go_goroutines{job=\"expose\"}&amp;start=1573822388&amp;end=1573822392&amp;step=1"; echo; done
+"values":[[1573822388,"6"],[1573822392,"6"]]}]}}
+"values":[[1573822388,"6"],[1573822389,"6"],[1573822390,"6"],[1573822391,"6"],[1573822392,"6"]]}]}}</pre>
+<p>VictoriaMetrics is incorrectly returning time series that are stale. Let's check for NaNs more generally:</p>
+<pre>$ d=$(date +%s -d'61 seconds ago'); for i in 9090 8428; do curl -g ":$i/api/v1/query?query=prometheus_rule_evaluation_duration_seconds{quantile=\"0.5\"}&amp;time=$d"; echo; done
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"prometheus_rule_evaluation_duration_seconds","instance":"localhost:9090","job":"prometheus","quantile":"0.5"},"value":[1573822973,"NaN"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[]}</pre>
+<p>So when comparing how good the compression is we need to keep in mind that VictoriaMetrics is both lossy, and dropping NaNs (and possibly other non-real values) whereas Prometheus is lossless and handling the non-real values including stale markers correctly.</p>
+<p>&nbsp;</p>
+<p>While waiting on the data for compression to build up, one thing I noticed was that there was a big difference in the index sizes of the snapshots. Prometheus has 8.8MB while VictoriaMetrics has 427KB. Both seem to be using inverted indexes, and I know the Prometheus implementation is pretty well optimised so this makes me wonder what the tradeoff is as merely clever memory tricks shouldn't produce a 20x difference. Does it generate index at startup or on the fly, rather than Prometheus's approach of mmaping the posting lists? Might it use compression over the whole index so it's smaller, but slower? I haven't gotten my head around all the code yet, even with some pointers from the author.</p>
+<p>So let's get some indicative numbers. Prometheus has a good set of <a href="https://github.com/prometheus/prometheus/blob/23c0299d85bfeb5d9b59e994861553a25ca578e5/tsdb/head_bench_test.go#L66">micro-benchmarks for index lookups</a> so I inserted the same data into both Prometheus and VictoriaMetrics and ran the same queries via the HTTP API. For example:</p>
+<pre>$ for i in {0..5}; do time curl -g ':9000/api/v1/query?query=sum({n="1"})&amp;time=1573829440'; done 2&gt;&amp;1 &gt; /dev/null | fgrep real | cut -d 'm' -f 2 | sort -g | head -1
+1.933s
+</pre>
+<p>Running them all and comparing, I get:</p>
+<pre>                                 Prom        VM   Ratio
+n="1"                           0.560     1.933    3.45
+n="1",j="foo"                   0.265     1.167    4.40
+j="foo",n="1"                   0.270     1.156    4.28
+n="1",j!="foo"                  0.275     1.174    4.27
+i=~".*"                      Rejected   Timeout     n/a
+i=~".+"                        25.617   Timeout     n/a
+i=~""                        Rejected     0.014     n/a
+i!=""                          24.202   Timeout     n/a
+n="1",i=~".*",j="foo"           0.332     1.149    3.46
+n="1",i=~".*",i!="2",j="foo"    0.379     1.188    3.13
+n="1",i!=""                     0.845     1.939    2.29
+n="1",i!="",j="foo"             0.476     1.188    2.50
+n="1",i=~".+",j="foo"           0.492     1.164    2.37
+n="1",i=~"1.+",j="foo"          0.103     0.391    3.80
+n="1",i=~".+",i!="2",j="foo"    0.497     1.155    2.32
+n="1",i=~".+",i!~"2.*",j="foo"  0.528     1.078    2.04
+</pre>
+<p>This shows that Prometheus is faster in all cases, by ~2.0-4.4x. While I personally believe in throughput over latency in cases like this, for completeness I did a run with GOMAXPROCS set to default on my 4 core desktop (which is also doing desktopy things) then VictoriaMetrics is ~1.6-2x lower latency compared to single core. However even granting that indulgence Prometheus's TSDB remains ~1.3-3.3x lower latency, even given VictoriaMetrics is using more cores.</p>
+<p>So it would appear at what is a moderate index size of 5M time series with no ingestion or other activity ongoing, a standalone Prometheus server is faster at index lookups than VictoriaMetrics at the cost of what is in the grand scheme of things a small bit more disk space for the index.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Now that's it's been a while, let's see how the disk usage is doing:</p>
+<pre>13016742 prometheus-2.14.0.linux-amd64/data/snapshots/20191118T100200Z-490bd268b68e6a3f
+11459543 victoria-metrics-data/snapshots/20191118100200-15D7566ABFAD112D
+</pre>
+<p>So VictoriaMetrics is using around 12% less disk space here. The ratio of Prometheus to VictoriaMetrics usage started out higher though, generally has been trending down, and seems to have a bit of a sawtooth pattern:</p>
+<p><a href="https://www.robustperception.io/wp-content/uploads/2019/11/prom-vm-ratio.png"><img loading="lazy" class="alignnone size-full wp-image-4793" src="https://www.robustperception.io/wp-content/uploads/2019/11/prom-vm-ratio.png" alt="" width="605" height="340"></a></p>
+<p>Given the results from my lightning talk, I'd expect this to get to the point where Prometheus had lower usage if I left it running for longer. I don't believe this level of difference is important though, as we're only talking 10% in some direction With a system taking in 1M samples/s and offloading to S3 via something like Thanos that 10% difference only comes to storage costs of a couple hundred of dollars for a full year's data over a year. It's not nothing, but it's only a pretty small factor to be considered along engineer salaries and the other compute costs involved in monitoring.</p>
+<p>&nbsp;</p>
+<p>In summary VictoriaMetrics may use a small bit less disk space than Prometheus depending on usage, however this is at the cost of losing precision, dropping NaNs, and not having the benefits of staleness handling. The indexes are smaller on disk, but lookups are several times less performant compared to a stock Prometheus, before we even get to discuss the much larger amounts of data that are typically involved in distributed systems like Thanos, Cortex, and M3DB. The above also shows the risks of independently implementing a language like PromQL from scratch rather than reusing the Prometheus code like everyone else does, as there's several examples where VictoriaMetrics returns an incorrect result. There's lots of little details you have to get right, and these are only the issues that I came across by chance while playing around. I imagine these issues will gradually be addressed, however I'd advise caution as things stand. Disk is cheap, humans having to deal with subtle and not so subtle semantic issues much less so.</p>
+<p>A good next step would be if someone did a full comparison between Thanos, Cortex, and M3DB with larger data volumes, as that's where VictoriaMetrics positions itself.</p>
+<p>&nbsp;</p>
+<p>A response to this post from VictoriaMetrics can be found <a href="https://medium.com/@valyala/evaluating-performance-and-correctness-victoriametrics-response-e27315627e87">here</a>.</p>
+<p>&nbsp;</p>
+<p><em>Need help with Prometheus and clustered storage? Contact us.</em></p>
+
+							
+				<div class="post-meta">
+					
+				<div class="category-meta">
+					<span>Published by Brian Brazil in</span> <a href="/category/posts">Posts</a>
+				</div>
+			
+					
+				<div class="tags-meta">
+					<span>Tags: </span> <a href="/tag/prometheus">prometheus</a>, <a href="/tag/promql">promql</a>, <a href="/tag/remote-write">remote write</a>
+				</div>
+			
+				</div>		
+			
+							<div id="share-holder">
+			<div class="is-content share-box">
+				<div class="share-icons-wrapper">
+					<p class="visible regular">Share on</p>
+					<div class="semplice-share-icons first">
+						<div class="share-icon icon-facebook">
+							<a href="//facebook.com/sharer.php?u=/evaluating-performance-and-correctness" onclick="window.open(this.href,this.title,'width=500,height=500,top=200px,left=200px');  return false;" rel="nofollow" target="_blank"><svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<path d="M4.025,5.291H5.68V4.541V3.805V3.683c0-0.708,0.018-1.802,0.533-2.479C6.755,0.487,7.5,0,8.781,0
+	c2.087,0,2.966,0.297,2.966,0.297l-0.414,2.451c0,0-0.689-0.199-1.333-0.199c-0.643,0-1.219,0.23-1.219,0.873v0.26v0.858v0.751
+	h2.638l-0.184,2.393H8.781V16H5.68V7.684H4.025V5.291"></path>
+</svg>
+</a>
+						</div>
+					</div>
+					<div class="semplice-share-icons">
+						<div class="share-icon icon-twitter">
+							<a href="//twitter.com/share?url=/evaluating-performance-and-correctness" onclick="window.open(this.href,this.title,'width=500,height=500,top=200px,left=200px');  return false;" rel="nofollow" target="_blank"><svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<path d="M16,3.536c-0.589,0.261-1.221,0.438-1.885,0.517c0.678-0.406,1.198-1.05,1.443-1.816c-0.634,0.376-1.337,0.649-2.085,0.797
+	c-0.599-0.638-1.452-1.037-2.396-1.037c-1.813,0-3.283,1.47-3.283,3.282c0,0.257,0.029,0.508,0.085,0.748
+	c-2.728-0.137-5.147-1.444-6.766-3.43c-0.283,0.485-0.444,1.049-0.444,1.65c0,1.139,0.579,2.144,1.46,2.732
+	C1.592,6.963,1.086,6.816,0.643,6.57c0,0.014,0,0.027,0,0.041c0,1.59,1.132,2.917,2.633,3.219C3,9.905,2.71,9.945,2.411,9.945
+	c-0.212,0-0.417-0.021-0.618-0.059c0.418,1.304,1.63,2.253,3.066,2.28c-1.123,0.88-2.539,1.405-4.077,1.405
+	c-0.265,0-0.526-0.016-0.783-0.046C1.453,14.456,3.178,15,5.032,15c6.038,0,9.34-5.002,9.34-9.34c0-0.142-0.003-0.284-0.01-0.425
+	C15.003,4.773,15.56,4.195,16,3.536z"></path>
+</svg>
+</a>
+						</div>
+					</div>
+					<div class="semplice-share-icons">
+						<div class="share-icon icon-linkedin">
+							<a href="//linkedin.com/shareArticle?mini=true&url=/evaluating-performance-and-correctness&title=Evaluating%20Performance%20and%20Correctness" onclick="window.open(this.href,this.title,'width=500,height=500,top=200px,left=200px');  return false;" rel="nofollow" target="_blank"><svg version="1.1" id="Ebene_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<g>
+	<g>
+		<path d="M14.815,0H1.181C0.529,0,0,0.517,0,1.153v13.693C0,15.483,0.529,16,1.181,16h13.634C15.467,16,16,15.483,16,14.845V1.153
+			C16,0.517,15.467,0,14.815,0z M4.745,13.634H2.371V5.999h2.374V13.634z M3.558,4.955c-0.761,0-1.376-0.617-1.376-1.376
+			c0-0.759,0.615-1.376,1.376-1.376c0.759,0,1.375,0.617,1.375,1.376C4.934,4.338,4.317,4.955,3.558,4.955z M13.633,13.634h-2.37
+			V9.921c0-0.886-0.017-2.025-1.234-2.025c-1.235,0-1.423,0.965-1.423,1.961v3.777H6.234V5.999H8.51v1.043h0.032
+			c0.317-0.6,1.091-1.233,2.246-1.233c2.401,0,2.845,1.581,2.845,3.638V13.634z"></path>
+	</g>
+</g>
+</svg>
+</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+					</section>
+				
+			<section id="comments" class="comments-area">
+				<div class="container">
+					<div class="row">
+						<div class="column" data-xl-width="8" data-md-width="11" data-sm-width="12" data-xs-width="12">
+		<p class="comments-title">Comments</p>
+<p class="no-comments">No comments.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<section class="blog-pagination">
+				<div class="container">
+					<div class="row">
+						<div class="column" data-xl-width="8" data-md-width="11" data-sm-width="12" data-xs-width="12">
+							
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+					<section id="section_64d57a94c" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single" data-valign="center" data-justify="center">
+						
+						<div class="container">
+						<div id="row_d877c9524" class="row">
+<div id="column_c088c356a" class="column" data-xl-width="1">
+					<div class="content-wrapper">
+						
+				<div id="content_d0afa3066" class="column-content" data-module="image">
+					<div class="ce-image" data-align="center"><a href="https://twitter.com/RobustPerceiver" target="_blank"><img loading="lazy" class="is-content" src="/wp-content/uploads/2018/07/twitter.png" width="80" height="81" alt="twitter" caption="" data-width="original" data-scaling="no"></a></div>
+				</div>
+			
+					</div>
+				</div>
+<div id="column_6da8572ec" class="column" data-xl-width="1">
+					<div class="content-wrapper">
+						
+				<div id="content_505711ba6" class="column-content" data-module="image">
+					<div class="ce-image" data-align="center"><a href="https://www.youtube.com/channel/UCtiFWOeRSTP3M6QUnTEKwpw" target="_blank"><img loading="lazy" class="is-content" src="/wp-content/uploads/2018/07/youtube.png" width="81" height="80" alt="youtube" caption="" data-width="original" data-scaling="no"></a></div>
+				</div>
+			
+					</div>
+				</div>
+<div id="column_3f3eb806b" class="column" data-xl-width="1">
+					<div class="content-wrapper">
+						
+				<div id="content_0d56836dc" class="column-content" data-module="image">
+					<div class="ce-image" data-align="center"><a href="https://www.linkedin.com/company/10177555" target="_blank"><img loading="lazy" class="is-content" src="/wp-content/uploads/2018/07/linkedin.png" width="80" height="80" alt="linkedin" caption="" data-width="original" data-scaling="no"></a></div>
+				</div>
+			
+					</div>
+				</div>
+</div>
+<div id="row_d3899dc30" class="row"><div id="column_0c436d0cc" class="column" data-xl-width="12">
+					<div class="content-wrapper">
+						
+				<div id="content_8ee682857" class="column-content" data-module="paragraph">
+					<div class="is-content"><div data-content-for="xl"><p style="text-align: center; line-height: 2.77778rem;" data-mce-style="text-align: center; line-height: 2.77778rem;"><span style="color: rgb(255, 255, 255); letter-spacing: 0.0222222rem;" data-mce-style="color: #ffffff; letter-spacing: 0.0222222rem;"><span class="font_7g535ae2g"><a style="color: #ffffff;" href="/blog" data-mce-href="../blog" data-mce-style="color: #ffffff;">Blog</a></span>&nbsp; &nbsp;|&nbsp; &nbsp;<a style="color: #ffffff;" href="https://robustperception.teachable.com/" target="_blank" rel="noopener" data-mce-href="https://robustperception.teachable.com/" data-mce-style="color: #ffffff;"><span class="font_7g535ae2g">Training</span></a>&nbsp; &nbsp;|&nbsp; &nbsp;<span class="font_7g535ae2g"><a style="color: #ffffff;" href="https://www.amazon.com/Prometheus-Infrastructure-Application-Performance-Monitoring-ebook/dp/B07FCV2VVG/" data-mce-href="https://www.amazon.com/Prometheus-Infrastructure-Application-Performance-Monitoring-ebook/dp/B07FCV2VVG/" data-mce-style="color: #ffffff;" target="_blank" rel="noopener">﻿Book</a></span>&nbsp; &nbsp;|&nbsp; &nbsp;<span class="font_7g535ae2g"><a style="color: #ffffff;" href="/privacy" data-mce-href="../privacy" data-mce-style="color: #ffffff;" data-mce-selected="1">Privacy﻿</a></span><span class="font_7g535ae2g"></span></span></p></div></div>
+				</div>
+			
+					</div>
+				</div></div>
+						</div>
+					</section>				
+				
+				</div>
+			</div>
+		</div>
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+				<button class="pswp__button pswp__button--share" title="Share"></button>
+				<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+					  <div class="pswp__preloader__cut">
+						<div class="pswp__preloader__donut"></div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div> 
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+			</button>
+			<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+			</button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>	<div class="back-to-top">
+		<a class="semplice-event" data-event-type="helper" data-event="scrollToTop"><svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="53px" height="20px" viewbox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
+<g id="Ebene_3">
+</g>
+<g>
+	<polygon points="43.886,16.221 42.697,17.687 26.5,4.731 10.303,17.688 9.114,16.221 26.5,2.312 	"></polygon>
+</g>
+</svg>
+</a>
+	</div>
+	<script type="text/javascript" id="ppress-frontend-script-js-extra">
+/* <![CDATA[ */
+var pp_ajax_form = {"ajaxurl":"\/wp-admin\/admin-ajax.php","confirm_delete":"Are you sure?","deleting_text":"Deleting...","deleting_error":"An error occurred. Please try again.","nonce":"5058643fc8","disable_ajax_form":"false"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=3.1.19" id="ppress-frontend-script-js"></script>
+<script type="text/javascript" id="mediaelement-core-js-before">
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type="text/javascript" src="/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.16" id="mediaelement-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.9.3" id="mediaelement-migrate-js"></script>
+<script type="text/javascript" id="mediaelement-js-extra">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="semplice-frontend-js-js-extra">
+/* <![CDATA[ */
+var semplice = {"default_api_url":"\/wp-json","semplice_api_url":"\/wp-json\/semplice\/v1\/frontend","template_dir":"\/wp-content\/themes\/semplice4","category_base":"\/category\/","tag_base":"\/tag\/","nonce":"d1a583233f","frontend_mode":"static","static_transitions":"disabled","site_name":"Robust Perception | Prometheus Monitoring Experts","base_url":"","frontpage_id":"3967","blog_home":"\/blog","blog_navbar":"nav_4ndms1087","sr_status":"disabled","blog_sr_status":"disabled","is_preview":"","password_form":"\n<div class=\"post-password-form\">\n\t<div class=\"inner\">\n\t\t<form action=\"\/wp-login.php?action=postpass\" method=\"post\">\n\t\t\t<div class=\"password-lock\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"35\" height=\"52\" viewBox=\"0 0 35 52\">\r\n  <path id=\"Form_1\" data-name=\"Form 1\" d=\"M31.3,25.028H27.056a0.755,0.755,0,0,1-.752-0.757V14.654a8.8,8.8,0,1,0-17.608,0v9.616a0.755,0.755,0,0,1-.752.757H3.7a0.755,0.755,0,0,1-.752-0.757V14.654a14.556,14.556,0,1,1,29.111,0v9.616A0.755,0.755,0,0,1,31.3,25.028Zm-3.495-1.514h2.743V14.654a13.051,13.051,0,1,0-26.1,0v8.859H7.192V14.654a10.309,10.309,0,1,1,20.617,0v8.859Zm4.43,28.475H2.761A2.77,2.77,0,0,1,0,49.213V25.28a1.763,1.763,0,0,1,1.755-1.766H33.242A1.763,1.763,0,0,1,35,25.28V49.213A2.77,2.77,0,0,1,32.239,51.988ZM1.758,25.028a0.252,0.252,0,0,0-.251.252V49.213a1.259,1.259,0,0,0,1.254,1.262H32.239a1.259,1.259,0,0,0,1.254-1.262V25.28a0.252,0.252,0,0,0-.251-0.252H1.758ZM20.849,43h-6.7a0.75,0.75,0,0,1-.61-0.314,0.763,0.763,0,0,1-.1-0.682l1.471-4.44a4.1,4.1,0,1,1,5.184,0L21.563,42a0.763,0.763,0,0,1-.1.682A0.75,0.75,0,0,1,20.849,43ZM15.2,41.487H19.8l-1.319-3.979a0.76,0.76,0,0,1,.33-0.891,2.6,2.6,0,1,0-2.633,0,0.76,0.76,0,0,1,.33.891Z\"\/>\r\n<\/svg>\r\n<\/div>\n\t\t\t<p>This content is protected. <br \/><span>To view, please enter the password.<\/span><\/p>\n\t\t\t<div class=\"input-fields\">\n\t\t\t\t<input name=\"post_password\" class=\"post-password-input\" type=\"password\" size=\"20\" maxlength=\"20\" placeholder=\"Enter password\" \/><input type=\"submit\" name=\"Submit\" value=\"Submit\" \/>\t\t\t<\/div>\n\t\t<\/form>\n\t<\/div>\n<\/div>\n\n","gallery":{"prev":"<svg version=\"1.1\" id=\"Ebene_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\"\n\twidth=\"18px\" height=\"40px\"  viewBox=\"0 0 18 40\" enable-background=\"new 0 0 18 40\" xml:space=\"preserve\">\n<g id=\"Ebene_2\">\n\t<g>\n\t\t<polygon points=\"16.3,40 0.3,20 16.3,0 17.7,1 2.5,20 17.7,39 \t\t\"\/>\n\t<\/g>\n<\/g>\n<\/svg>\n","next":"<svg version=\"1.1\" id=\"Ebene_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\"\n\twidth=\"18px\" height=\"40px\" viewBox=\"0 0 18 40\" enable-background=\"new 0 0 18 40\" xml:space=\"preserve\">\n<g id=\"Ebene_2\">\n\t<g>\n\t\t<polygon points=\"0.3,39 15.5,20 0.3,1 1.7,0 17.7,20 1.7,40 \t\t\"\/>\n\t<\/g>\n<\/g>\n<\/svg>\n"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/semplice4/assets/js/frontend.min.js?ver=4.2.2" id="semplice-frontend-js-js"></script>
+	</body>
+</html>

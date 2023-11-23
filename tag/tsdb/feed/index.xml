@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tsdb &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/tsdb/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Mon, 05 Oct 2020 09:32:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>tsdb &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How long can Prometheus retention be?</title>
+		<link>/how-long-can-prometheus-retention-be</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 05 Oct 2020 09:32:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[capacity]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[provisioning]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5669</guid>
+
+					<description><![CDATA[Data is smaller and disks are bigger than you'd think. When planning a Prometheus deployment you might have gotten the impression that Prometheus isn't designed for more than 2 weeks of storage, so if you want more you have to use a clustered storage system such as Thanos, Cortex, or M3DB. This is however a [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How much space does the WAL take up?</title>
+		<link>/how-much-space-does-the-wal-take-up</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 13 Apr 2020 08:47:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5269</guid>
+
+					<description><![CDATA[The quoted storage numbers for Prometheus are usually for the blocks, not including the WAL. All samples that are ingested by Prometheus are written to the write ahead log or WAL, so that on restart in-memory state which hasn't made it to a block yet can be reconstructed. While this tends not to be massive [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Optimising index memory usage for blocks</title>
+		<link>/optimising-index-memory-usage-for-blocks</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 13 Jan 2020 09:36:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4998</guid>
+
+					<description><![CDATA[One of the big changes in Prometheus 2.15.0 was reduced memory usage for indexes. To understand the improvements, we first need to talk about how block indexes work and particularly what data structures are kept in memory. If you look at the docs you'll see the index consists of: A Symbol Table Series, including their [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How much disk space do Prometheus blocks use?</title>
+		<link>/how-much-disk-space-do-prometheus-blocks-use</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 24 Jun 2019 06:49:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4454</guid>
+
+					<description><![CDATA[Memory for ingestion is just one part of the resources Prometheus uses, let's look at disk blocks. Every 2 hours Prometheus compacts the data that has been buffered up in memory onto blocks on disk. This will include the chunks, indexes, tombstones, and various metadata. The main part of this should usually be the chunks [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Finding churning targets in Prometheus with scrape_series_added</title>
+		<link>/finding-churning-targets-in-prometheus-with-scrape_series_added</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 03 Jun 2019 06:07:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4443</guid>
+
+					<description><![CDATA[Prometheus 2.10 has a new metric to make finding churn easier. The new scrape_series_added metric indicates how many new series were created in a given scrape. Due to various technicalities it may under or over-report, however for "normal" usage it should be quite useful for discovering misbehaving targets - without having to wait for a [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How much RAM does Prometheus 2.x need for cardinality and ingestion?</title>
+		<link>/how-much-ram-does-prometheus-2-x-need-for-cardinality-and-ingestion</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 06 May 2019 07:01:51 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[profiling]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4416</guid>
+
+					<description><![CDATA[I previously looked at ingestion memory for 1.x, how about 2.x? Prometheus 2.x has a very different ingestion system to 1.x, with many performance improvements. This time I'm also going to take into account the cost of cardinality in the head block. To start with I took a profile of a Prometheus 2.9.2 ingesting from [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Configuring Prometheus storage retention</title>
+		<link>/configuring-prometheus-storage-retention</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 08 Apr 2019 07:12:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4352</guid>
+
+					<description><![CDATA[How can you control how much history Prometheus keeps? Prometheus stores time series and their samples on disk. Given that disk space is a finite resource, you want some limit on how much of it Prometheus will use. Historically this was done with the --storage.tsdb.retention flag, which specifies the time range which Prometheus will keep [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using tsdb analyze to investigate churn and cardinality</title>
+		<link>/using-tsdb-analyze-to-investigate-churn-and-cardinality</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 04 Feb 2019 08:41:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[profiling]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4265</guid>
+
+					<description><![CDATA[The Prometheus TSDB's code base includes a tool to help you find "interesting" metrics in terms of storage performance. When it comes to Prometheus resource usage and efficiency, the important questions are around cardinality and churn. That is how many time series you have, and how often the set of time series changes. I recently [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Optimising Prometheus 2.6.0 Memory Usage with pprof</title>
+		<link>/optimising-prometheus-2-6-0-memory-usage-with-pprof</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Jan 2019 10:48:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[profiling]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4241</guid>
+
+					<description><![CDATA[The 2.6.0 release of Prometheus includes optimisations to reduce the memory taken by indexes and compaction. There have been some reports that compaction was causing larger memory spikes than was desirable. I dug into this and improved it for Prometheus 2.6.0, so let's see how. Firstly I wrote a test setup that created some samples for [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Optimising startup time of Prometheus 2.6.0 with pprof</title>
+		<link>/optimising-startup-time-of-prometheus-2-6-0-with-pprof</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 07 Jan 2019 09:15:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[golang]]></category>
+		<category><![CDATA[profiling]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[tsdb]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=4189</guid>
+
+					<description><![CDATA[The 2.6.0 release of Prometheus includes WAL loading optimisations to make startup faster. The informal design goal of the Prometheus 2.x TSDB startup was that it should take no more than about a minute. Over the past few months there's been reports of it taking quite a bit more than this, which is a problem [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

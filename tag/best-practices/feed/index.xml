@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>best practices &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<atom:link href="/tag/best-practices/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Prometheus Monitoring Experts</description>
+	<lastBuildDate>Tue, 29 Dec 2020 12:15:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2015/07/cropped-robust-icon-32x32.png</url>
+	<title>best practices &#8211; Robust Perception | Prometheus Monitoring Experts</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Monitoring is a means, not an end</title>
+		<link>/monitoring-is-a-means-not-an-end</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 28 Dec 2020 09:15:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5873</guid>
+
+					<description><![CDATA[Does it really have to be perfect? While there is a certain intellectual satisfaction to be had by getting a system just right, the purpose of monitoring is to help you run whatever it is that you're monitoring. That could be a website used directly by your customers, a backend only used internally, or even [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Policy is for configuration, not metric names</title>
+		<link>/policy-is-for-configuration-not-metric-names</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Dec 2020 10:29:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[federation]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[relabelling]]></category>
+		<category><![CDATA[remote write]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5845</guid>
+
+					<description><![CDATA[Metric names are part of a time series's identity, so shouldn't include information unrelated to identity. I previously looked at some of the consideration for choosing target labels. Similar applies to the names of metrics, you want something descriptive but not longer than it needs to be. In this context, I'd like to talk about [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Prefer without and ignoring</title>
+		<link>/prefer-without-and-ignoring</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2020 09:40:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5860</guid>
+
+					<description><![CDATA[Which of by/without and on/ignoring should you use? When writing a given bit of PromQL you know what labels you want in the output of an aggregation, so why not put them in the by ? Similarly when doing vector matching and using on. So why ever use without and ignoring? Application architectures and deployment [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Don&#8217;t Try to Swim Upstream</title>
+		<link>/dont-try-to-swim-upstream</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 21 Sep 2020 10:04:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[push]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5233</guid>
+
+					<description><![CDATA[Have you ever felt that a piece of software just isn't doing what you need? Software tends to be designed with a specific set of use cases in mind, with design principles to facilitate those use cases, and then when it comes to implementation tradeoffs are made based on those principles. While it's unlikely that [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Delete All Your Alerts</title>
+		<link>/delete-all-your-alerts</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 20 Jul 2020 09:18:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alerting]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5514</guid>
+
+					<description><![CDATA[Trying to improve alerting piecemeal can be difficult. If you're in a situation where you are being inundated with low-value alerts, trying to gradually improve things can be a never-ending struggle. I once joined a team that was getting a few hundred email alerts per week, which the oncall was meant to handle all of. [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Remote read and partial failures</title>
+		<link>/remote-read-and-partial-failures</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 22 Jun 2020 09:43:25 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<category><![CDATA[remote read]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5441</guid>
+
+					<description><![CDATA[What happens when your clustered storage fails? A key design principle of Prometheus is reliability. Part of this is that it doesn't have any hard dependencies on clustered systems, such as on Zookeeper, Kafka, or Cassandra that may have issues if there's fun like a network partition. As long as Prometheus has network access to [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Atomic Writes and the Textfile Collector</title>
+		<link>/atomic-writes-and-the-textfile-collector</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 18 May 2020 06:54:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[node exporter]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5370</guid>
+
+					<description><![CDATA[To avoid weirdness, write your files atomically. Previous posts involving the node exporter's textfile collector have not written directly to the .prom file, rather writing first to a temporary file and then renaming it. This may seem like an unnecessary complication as things may seem fine without it, however it's actually an important detail for [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Don&#8217;t federate instance labels</title>
+		<link>/dont-federate-instance-labels</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 20 Apr 2020 09:12:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5283</guid>
+
+					<description><![CDATA[Federation can be quite useful, but it's not replication. We've previously looked at how federation can be usefully employed, and the downsides of using it otherwise. In this article I'll provide you with a rule of thumb for spotting where the use of federation is most likely inappropriate. Very simply, when federating if the time [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Setting Thresholds on Alerts</title>
+		<link>/setting-thresholds-on-alerts</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 02 Mar 2020 08:12:05 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[alerting]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[prometheus]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5144</guid>
+
+					<description><![CDATA[Alert thresholds can be surprisingly tricky to get right. Let's say you're fully on board with symptom based alerting and you've a latency SLO/SLA of say 500ms over a month for some service which has a typical value of 200ms (whether that is the average or some percentile is not relevant here). What threshold should [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Regex Selectors are a Smell</title>
+		<link>/regex-selectors-are-a-smell</link>
+		
+		<dc:creator><![CDATA[Brian Brazil]]></dc:creator>
+		<pubDate>Mon, 24 Feb 2020 09:45:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[best practices]]></category>
+		<category><![CDATA[instrumentation]]></category>
+		<category><![CDATA[promql]]></category>
+		<guid isPermaLink="false">https://www.robustperception.io/?p=5170</guid>
+
+					<description><![CDATA[Have you ever found yourself having to keep on updating and tweaking certain regexes in PromQL? A smell doesn't automatically mean that something is bad. A smell is a sign however that you might want to take a closer look, that there might be a better way to do things. Let's say you saw a [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>
